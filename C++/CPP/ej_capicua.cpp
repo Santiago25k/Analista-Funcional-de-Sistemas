@@ -28,7 +28,7 @@ originalNum = num;
 // Mientras el número sea diferente de cero, repetimos el bucle
 while (num != 0) 
 {
-    // Obtengo el último dígito del número ingresado y lo almacenamos en la variable 'digito'
+    // Obtengo el último dígito del número ingresado y lo almaceno en la variable 'digito'
     digito = num % 10; 
 
     // Agrego el último dígito al número invertido
