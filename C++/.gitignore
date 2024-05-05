@@ -1,5 +1,5 @@
 .vscode
 screnshots
-exe
-bat
-ini
+*.bat
+*.exe
+*.ini
