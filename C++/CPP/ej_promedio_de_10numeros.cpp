@@ -3,6 +3,10 @@
 #include "encabezado.hpp"
 
 int main () {
+
+    //Esta linea de codigo hace que al finalizar el programa ".exe" no se cierre. "!!esto funciona en IDE de Visual Studio Code!!"
+    const char* ruta = "C:\\Users\\Aquiles\\Desktop\\GitHub\\C++\\CPP\\ej_promedio_de_10numeros.exe";
+
     int numeros[10]; // arreglo donde guardaré los 10 números
     int suma = 0; // variable donde guardaré la suma de los números
     int contador = 0; // variable donde guardaré el número de iteraciones
@@ -30,6 +34,10 @@ int main () {
 
     // Imprimo el promedio de los números
     cout << "The average of the 10 numbers is: " << promedio << endl;
+
+
+    //Esta linea de codigo hace que al finalizar el programa no se cierre. "esto funciona en IDE de Visual Studio Code"
+    system(ruta);
 
     return 0;
 }
