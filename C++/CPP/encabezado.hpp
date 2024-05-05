@@ -12,7 +12,5 @@
 //Esto es para evitar poner std:: en cada linea del codigo
 using namespace std;
 
-// Para la función Sleep() y _kbhit()
-#include <windows.h> 
 // Para la función _kbhit() y _getch()
 #include <conio.h>  
