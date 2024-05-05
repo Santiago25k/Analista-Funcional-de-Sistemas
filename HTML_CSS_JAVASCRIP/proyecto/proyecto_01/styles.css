@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Rancho");
+
+  
+body {
+    
+/* Establece el color de fondo como negro */
+background: black;
+
+/* Configura el contenedor como un contenedor flexible */
+display: flex;
+
+/* Establece la dirección del eje principal como columna */
+flex-direction: column;
+
+/* Alinea los elementos a lo largo del eje transversal al centro */
+align-items: center;
+
+/* Alinea los elementos a lo largo del eje principal al centro */
+justify-content: center;
+
+/* Establece la altura del contenedor al 100% del tamaño de la ventana visible */
+height: 100vh;
+
+/* Controla el desbordamiento del contenido que excede el tamaño del contenedor */
+overflow: hidden;
+
+/* Establece los márgenes del contenedor en 0 */
+margin: 0;
+}
+
+/* Estilos específicos para la clase fire-animation */
+.fire-animation {
+
+    /* Utiliza la fuente Rancho */
+    font-family: 'Rancho', sans-serif; 
+
+    /* Color de la letra */
+    color: white;
+
+    /* Color de la sombra del texto*/
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 75px #ff0000; 
+
+}

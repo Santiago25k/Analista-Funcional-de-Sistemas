@@ -1,0 +1,102 @@
+/* Establece box-sizing: border-box para todos los elementos,
+lo que incluye el margen y el relleno en el tamaño del elemento */
+* {
+  box-sizing: border-box;
+}
+
+/* Establece el estilo básico del cuerpo de la página */
+body {
+  background-color: black; /* Establece el color de fondo del cuerpo como negro */
+  font-family: 'Roboto', sans-serif; /* Usa la fuente Roboto para el texto */
+  display: flex; /* Usa flexbox para alinear los elementos */
+  flex-direction: column; /* Organiza los elementos en una columna */
+  align-items: center; /* Centra los elementos horizontalmente */
+  justify-content: center; /* Centra los elementos verticalmente */
+  height: 100vh; /* Establece la altura del cuerpo al 100% de la altura de la ventana */
+  overflow: hidden; /* Oculta cualquier desbordamiento de contenido */
+}
+
+/* Estilo para el botón de clic */
+.clic {
+  background-color: red; /* Color de fondo rojo */
+  color: #fff; /* Texto blanco */
+  font-family: 'Poppins', sans-serif; /* Usa la fuente Poppins para el texto */
+  border: 0; /* Elimina el borde */
+  border-radius: 3px; /* Da al botón bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente de 16 píxeles */
+  padding: 12px 20px; /* Relleno alrededor del texto */
+  cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+  position: fixed; /* Posiciona el botón de forma fija */
+  top: 130px; /* Alinea el botón a 130 píxeles desde la parte superior */
+  letter-spacing: 1px; /* Establece un espacio entre letras */
+  box-shadow: -1px -5px 10px rgba(255, 26, 1, 0.817); /* Sombra alrededor del botón */
+  z-index: 100; /* Posición de capa alta para asegurarse de que se muestra sobre otros elementos */
+}
+
+/* Estilo cuando el botón de clic está enfocado */
+.clic:focus {
+  outline: none; /* Elimina el contorno de foco predeterminado */
+}
+
+/* Estilo cuando el botón de clic está activo (clicado) */
+.clic:active {
+  box-shadow: none; /* Elimina la sombra cuando está activo */
+  transform: translateY(1px); /* Mueve el botón 1 píxel hacia abajo */
+}
+
+/* Estilo para el contenedor de las cajas */
+.cajas {
+  display: flex; /* Usa flexbox para organizar las cajas */
+  flex-wrap: wrap; /* Permite que las cajas se envuelvan */
+  justify-content: space-around; /* Espacia las cajas uniformemente */
+  height: 500px; /* Altura de 500 píxeles */
+  width: 500px; /* Ancho de 500 píxeles */
+  position: relative; /* Posición relativa para el contenedor */
+  transition: 5s ease; /* Transición suave de 5 segundos */
+}
+
+/* Estilo cuando el contenedor de las cajas tiene la clase 'grandes' */
+.cajas.grandes {
+  width: 600px; /* Ancho de 600 píxeles */
+  height: 600px; /* Altura de 600 píxeles */
+}
+
+/* Estilo adicional para las cajas dentro de un contenedor con la clase 'grandes' */
+.cajas.grandes .caja {
+  transform: rotateZ(360deg); /* Gira las cajas 360 grados */
+}
+
+/* Estilo para cada caja individual */
+.caja {
+  background-image: url('./Pixel_Jeff.gif'); /* Establece una imagen de fondo */
+  background-repeat: no-repeat; /* No repite la imagen de fondo */
+  background-size: 500px 500px; /* Ajusta el tamaño de fondo a 500px por 500px */
+  position: relative; /* Posición relativa para cada caja */
+  height: 125px; /* Altura de 125 píxeles */
+  width: 125px; /* Ancho de 125 píxeles */
+  transition: 5s ease; /* Transición suave de 5 segundos */
+}
+
+/* Pseudo-elemento 'after' para cada caja */
+.caja::after {
+  content: ''; /* Agrega un contenido vacío */
+  background-color: #f92424; /* Color de fondo rojo */
+  position: absolute; /* Posición absoluta */
+  top: 8px; /* A 8 píxeles desde la parte superior */
+  right: -15px; /* A -15 píxeles desde la derecha */
+  height: 100%; /* Altura del 100% del elemento padre */
+  width: 15px; /* Ancho de 15 píxeles */
+  transform: skewY(45deg); /* Sesga el elemento 45 grados en el eje Y */
+}
+
+/* Pseudo-elemento 'before' para cada caja */
+.caja::before {
+  content: ''; /* Agrega un contenido vacío */
+  background-color: #c70000; /* Color de fondo rojo oscuro */
+  position: absolute; /* Posición absoluta */
+  bottom: -15px; /* A -15 píxeles desde la parte inferior */
+  left: 8px; /* A 8 píxeles desde la izquierda */
+  height: 15 píxeles; /* Altura de 15 píxeles */
+  width: 100%; /* Ancho del 100% del elemento padre */
+  transform: skewX(45deg); /* Sesga el elemento 45 grados en el eje X */
+}

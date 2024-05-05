@@ -1,0 +1,184 @@
+/* Establece que el box-sizing de todos los elementos sea 'border-box' para incluir 
+los márgenes y bordes dentro del tamaño total del elemento */
+* {
+  box-sizing: border-box;
+}
+
+/* Elimina los márgenes predeterminados del cuerpo y establece un alto completo
+para el viewport, además de ocultar las barras de desplazamiento */
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black; /* Usa background-color para establecer el color de fondo */
+}
+
+/* Estilo para los títulos de nivel 1 (h1) */
+h1 {
+  color: white; /* Establece el color del texto a blanco */
+}
+
+/* Estilo para los títulos de nivel 4 (h4) */
+h4 {
+  font-size: 20px; /* Establece el tamaño de fuente a 20px */
+  margin: 5px; /* Establece un margen de 5px alrededor del título */
+  text-transform: uppercase; /* Convierte el texto a mayúsculas */
+  color: white; /* Establece el color del texto a blanco */
+}
+
+/* Estilo para el contenedor de la cuenta regresiva */
+.counter {
+  position: fixed;
+  top: 50%; /* Posiciona el contenedor en la mitad vertical de la página */
+  left: 50%; /* Posiciona el contenedor en la mitad horizontal de la página */
+  transform: translate(-50%, -50%); /* Centra el contenedor usando transform */
+  text-align: center; /* Centra el texto en el contenedor */
+}
+
+/* Estilo para ocultar la cuenta regresiva */
+.counter.hide {
+  transform: translate(-150%, -150%) scale(0);
+  animation: hide 0.2s ease-out; /* Anima la ocultación con una duración de 0.2 segundos */
+}
+
+/* Define la animación para ocultar la cuenta regresiva */
+@keyframes hide {
+  0% {
+      transform: translate(-50%, -50%) scale(1); /* Inicio de la animación */
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(0); /* Fin de la animación */
+  }
+}
+
+/* Estilo para el contenedor del mensaje final */
+.final {
+  position: fixed;
+  top: 50%; /* Posiciona el contenedor en la mitad vertical de la página */
+  left: 50%; /* Posiciona el contenedor en la mitad horizontal de la página */
+  transform: translate(-50%, -50%) scale(0); /* Oculta el mensaje inicialmente */
+  text-align: center; /* Centra el texto en el contenedor */
+}
+
+/* Estilo para mostrar el mensaje final */
+.final.show {
+  transform: translate(-50%, -50%) scale(1); /* Muestra el mensaje final */
+  animation: show 1s ease-out; /* Anima la muestra con una duración de 0.2 segundos */
+}
+
+/* Define la animación para mostrar el mensaje final */
+@keyframes show {
+  0% {
+      transform: translate(-50%, -50%) scale(0);
+  }
+  30% {
+      transform: translate(-50%, -50%) scale(1.4);
+  }
+  100% {
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* Estilo para el contenedor de los números de la cuenta regresiva */
+.nums {
+  color: blue; /* Establece el color del texto a un tono de azul */
+  font-size: 50px; /* Establece el tamaño de fuente a 50px */
+  position: relative; /* Establece la posición relativa del contenedor */
+  overflow: hidden; /* Oculta el contenido que se salga del contenedor */
+  width: 250px; /* Establece el ancho a 250px */
+  height: 50px; /* Establece la altura a 50px */
+}
+
+/* Estilo para los números de la cuenta regresiva */
+.nums span {
+  position: absolute;
+  top: 50%; /* Posiciona el elemento en el centro vertical del contenedor */
+  left: 50%; /* Posiciona el elemento en el centro horizontal del contenedor */
+  transform: translate(-50%, -50%); /* Centra el elemento */
+  transform-origin: bottom center; /* Establece el punto de origen de la rotación */
+  rotate: 120deg; /* Agrega la rotación inicial al número */
+}
+
+/* Estilo para los números en la animación 'in' */
+.nums span.in {
+  transform: translate(-50%, -50%); /* Centra el elemento */
+  transform-origin: bottom center; /* Establece el punto de origen de la rotación */
+  animation: goIn 0.5s ease-in-out; /* Anima la entrada del número */
+  rotate: 0deg; /* Establece la rotación final */
+}
+
+/* Estilo para los números en la animación 'out' */
+.nums span.out {
+  animation: goOut 1s ease-in-out; /* Anima la salida del número */
+}
+
+/* Define la animación para la entrada de los números */
+@keyframes goIn {
+  0% {
+      rotate: 120deg;
+  }
+  30% {
+      rotate: -20deg;
+  }
+  60% {
+      rotate: 10deg;
+  }
+  100% {
+      rotate: 0deg;
+  }
+}
+
+/* Define la animación para la salida de los números */
+@keyframes goOut {
+  0% {
+      rotate: 0deg;
+  }
+  60% {
+      rotate: 20deg;
+  }
+  100% {
+      rotate: -120deg;
+  }
+}
+
+/* Estilo para el botón de replay */
+#replay {
+  background-color: blue; /* Establece el color de fondo a un tono de azul */
+  border-radius: 3px; /* Redondea las esquinas del botón */
+  border: none; /* No muestra borde */
+  color: aliceblue; /* Establece el color del texto a blanco */
+  padding: 5px; /* Añade relleno de 5px */
+  text-align: center; /* Centra el texto */
+  display: inline-block; /* Establece el botón como un bloque en línea */
+  cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+  transition: all 0.3s; /* Establece una transición de 0.3 segundos para todos los cambios de estilo */
+}
+
+/* Estilo para el contenido dentro del botón de replay */
+#replay span {
+  cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+  display: inline-block; /* Establece el contenido como un bloque en línea */
+  position: relative; /* Establece la posición relativa */
+  transition: 0.3s; /* Establece una transición de 0.3 segundos para los cambios de estilo */
+}
+
+/* Estilo para el contenido adicional dentro del botón de replay */
+#replay span:after {
+  content: '\00bb'; /* Añade un contenido adicional (una flecha hacia la derecha) */
+  position: absolute;
+  opacity: 0; /* Inicia con una opacidad de 0 (invisible) */
+  top: 0;
+  right: -20px;
+  transition: 0.5s; /* Establece una transición de 0.5 segundos para los cambios de estilo */
+}
+
+/* Añade un padding adicional al contenido cuando el botón es seleccionado */
+#replay:hover span {
+  padding-right: 25px;
+}
+
+/* Muestra el contenido adicional dentro del botón cuando se selecciona */
+#replay:hover span:after {
+  opacity: 1; /* Cambia la opacidad a 1 (visible) */
+  right: 0; /* Coloca la flecha hacia la derecha al lado del contenido */
+}
