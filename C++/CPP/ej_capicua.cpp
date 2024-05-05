@@ -8,12 +8,12 @@
 //La tercera sera donde controle los digitos
 //La cuarta sera donde se almacenara el numero invertido 
 
-
+//Dentro de este archivo se encuentran las librerias de C++
 #include "encabezado.hpp"
 
 int main () {
 
-//Esta linea de codigo hace que al finalizar el programa no se cierre. "esto funciona en IDE de Visual Studio Code"
+//Esta linea de codigo hace que al finalizar el programa ".exe" no se cierre. "!!esto funciona en IDE de Visual Studio Code!!"
 const char* ruta = "C:\\Users\\Aquiles\\Desktop\\GitHub\\C++\\CPP\\ej_capicua.exe";
 
 int num, originalNum, digito, numInvertido = 0;

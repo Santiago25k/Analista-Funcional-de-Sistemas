@@ -3,9 +3,6 @@
 //while es una estructura de control de flujos 
 //que permite ejecutar una seccion de bloque mientras la condicion sea verdadera
 
-
-
-
 int main () {
 
     //contador while
