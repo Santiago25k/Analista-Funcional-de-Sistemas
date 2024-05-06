@@ -18,7 +18,7 @@ formulario.addEventListener('submit', function(event) {
     };
 
     // Enviar datos a la API de envío de correo electrónico (a través de una solicitud POST)
-    fetch('http://localhost:3000/enviar-correo', {
+    fetch('https://formspree.io/f/myyrovnz', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
