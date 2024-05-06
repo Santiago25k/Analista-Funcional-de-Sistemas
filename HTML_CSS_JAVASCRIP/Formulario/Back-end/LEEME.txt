@@ -1,0 +1,21 @@
+para instalar dependecias ubicate en la terminal dentro de la carpeta /back-end y ejeuta (npm install) esto instalara todas las dependecias y para ejecutar el servidor (node app.js)
+
+variables de entorno en archivo .env para mas seguridad
+dentro del archivo coloca
+CORREO=tucorreo@gmail.com
+CONTRASENA=aaaa bbbb cccc dddd clave de seguridad que te dara google para que nodemail tenga acceso
+
+
+Utiliza autenticación de dos factores (2FA): En lugar de habilitar el acceso de aplicaciones menos seguras, considera utilizar la autenticación de dos factores (2FA) en tu cuenta de Google y generar una contraseña de aplicación específica para tu aplicación. Esto proporcionará un nivel adicional de seguridad sin comprometer la seguridad de tu cuenta principal de Gmail.
+La autenticación de dos factores (2FA) es una medida de seguridad adicional que puedes habilitar en tu cuenta de Google para protegerla aún más. Con 2FA activado, se te pedirá que verifiques tu identidad no solo con tu contraseña, sino también con un segundo factor, como un código enviado a tu teléfono móvil.
+
+Para generar una contraseña de aplicación específica para tu aplicación, sigue estos pasos:
+
+Accede a la configuración de seguridad de tu cuenta de Google.
+En la sección de "Inicio de sesión y seguridad", busca la opción de "Contraseña de aplicación" o "Aplicaciones y sitios web conectados".
+Es posible que se te solicite que ingreses tu contraseña actual para verificar tu identidad.
+Una vez dentro de la sección de "Contraseña de aplicación", busca la opción para generar una nueva contraseña de aplicación.
+Selecciona el tipo de aplicación para el que deseas generar la contraseña. En este caso, elige "Correo".
+Google te proporcionará una contraseña de aplicación única que puedes utilizar en lugar de tu contraseña normal cuando configures tu aplicación para acceder a tu cuenta de Gmail.
+Copia esta contraseña de aplicación y úsala en lugar de tu contraseña normal en la configuración de tu aplicación.
+Al generar una contraseña de aplicación específica para tu aplicación, estás proporcionando a tu aplicación un acceso limitado y seguro a tu cuenta de Gmail sin comprometer la seguridad de tu cuenta principal. Esto es especialmente útil cuando la autenticación de dos factores está habilitada, ya que tu contraseña normal no será suficiente para acceder a tu cuenta desde la aplicación, proporcionando una capa adicional de seguridad.

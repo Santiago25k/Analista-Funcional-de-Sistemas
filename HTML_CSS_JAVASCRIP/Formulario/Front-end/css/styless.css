@@ -1,0 +1,81 @@
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #333333; /* Color de fondo oscuro */
+    display: flex; /* Establecer el contenedor como flexbox */
+
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    height: 100vh; /* Toma toda la altura de la ventana del navegador */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el GIF animado */
+.gif-container {
+    position: fixed; /* Posición fija para que ocupe toda la ventana */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    z-index: -1; /* Colocar detrás del contenido */
+}
+
+.gif-container img {
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Altura completa */
+    object-fit: cover; /* Cubrir toda la ventana sin distorsión */
+}
+
+/* Estilos para el formulario */
+.formulario {
+    position: fixed; /* Posición fija para centrar */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    transform: translate(-50%, -50%); /* Centrar exactamente */
+    background-color: rgba(29, 27, 27, 0.8); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Sombra */
+    width: 70%; /* Ancho del formulario */
+    max-width: 600px; /* Ancho máximo del formulario */
+    color: white;
+}
+
+/* Estilos para los campos del formulario */
+.campo {
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para las etiquetas de los campos del formulario */
+.campo__label {
+    display: block; /* Mostrar como bloque */
+    margin-bottom: 5px; /* Margen inferior */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.campo__field {
+    width: 90%; /* Ancho del campo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #666666; /* Borde gris */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #333333; /* Fondo gris oscuro */
+    color: white; /* Letras blancas */
+}
+
+/* Estilos específicos para el campo de texto */
+.campo__field--textarea {
+    min-height: 100px; /* Altura mínima para el campo de texto */
+}
+
+/* Estilos para los botones */
+.boton {
+    background-color: #666666; /* Color de fondo gris */
+    color: white; /* Letras blancas */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor apuntador */
+}
+
+/* Estilos para el botón al pasar el mouse */
+.boton:hover {
+    background-color: #555555; /* Cambio de color de fondo al pasar el mouse */
+}
