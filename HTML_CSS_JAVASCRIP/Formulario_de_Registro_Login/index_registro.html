@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles_registro.css">
+    <title>Sign-up</title>
+</head>
+<body>
+
+    <div class="gif-container">
+        <img src="./img/fondo2.gif" alt="">
+    </div>
+
+
+    <form class="formulario" id="formulario" action="" method="POST">
+
+        <div class="campo">
+            <label class="campo__label" for="email">Correo electronico</label>
+            <input class="campo__field" type="email" id="email" name="email">
+        </div>
+
+        <div class="campo">
+            <label class="campo__label" for="nombre">Nombre</label>
+            <input class="campo__field" type="text" id="nombre" name="nombre">
+        </div>
+
+        <div class="campo">
+            <label class="campo__label" for="password" >Contraseña</label>
+            <input class="campo__field" type="password" id="password" name="password">
+        </div>
+
+        <div class="boton-container">
+            <input type="submit" value="Registrarse" class="boton boton--primario">
+        </div>
+        
+        
+        <div>
+            <h1>
+                ¿Ya tienes una cuenta?
+            </h1>
+            <div class="boton-container_registro">
+                <a href="./index_login.html" class="enlace">
+                    <button class="butom boton--primario" id="botonRedireccionarLogin">Logeate</button>
+                </a>
+            </div>
+        </div>
+
+
+    </form>
+    
+    <script src="./js/navegacion_registro.js"></script>
+</body>
+</html>
