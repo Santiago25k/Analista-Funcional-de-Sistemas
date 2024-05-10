@@ -14,9 +14,8 @@ int main() {
     int a = 3001;
     int b = 5151;
     
-
-    int suma = a + b;
-    int resta = a - b;
+    int suma = a + b; //calculo
+    int resta = a - b; //calculo
 
     //we show a message wiht the result
 

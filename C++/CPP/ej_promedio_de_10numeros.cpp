@@ -11,7 +11,7 @@ int main () {
     int suma = 0; // variable donde guardaré la suma de los números
     int contador = 0; // variable donde guardaré el número de iteraciones
 
-    cout << "Enter 10 numbers" << endl;
+    cout << "Ingresa 10 numeros enteros" << endl;
 
     // El bucle while se ejecutará hasta que contador sea menor que 10
     while (contador < 10) {
@@ -30,7 +30,7 @@ int main () {
     // Se utiliza static_cast<double> para convertir la variable 'suma' a tipo double antes de dividirla por 10.
     // Esto se hace para realizar una división de punto flotante en lugar de una división entera,
     // lo que garantiza que el resultado del promedio tenga decimales precisos.
-    const double promedio = static_cast<double>(suma) / 10;
+    const float promedio = static_cast<float>(suma) / 10;
 
     // Imprimo el promedio de los números
     cout << "The average of the 10 numbers is: " << promedio << endl;
