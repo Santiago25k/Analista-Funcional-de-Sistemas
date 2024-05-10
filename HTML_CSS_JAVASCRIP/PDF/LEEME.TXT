@@ -1,4 +1,4 @@
 Para abrir los archivos .pdf debes de descargarlo en una carpeta previamente seleccionada y buscarlo dentro
 
 https://lenguajecss.com/css/animaciones/animation-timeline/
-pagina donde encontraremos todo sobre css,html y javascrip
+pagina donde encontraremos todo sobre css y Javascrip
