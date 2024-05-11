@@ -12,24 +12,70 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-green bg-green">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!--Dark nos pone el nav "oscuro"-->
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Autenticacion con Firebase</a>
+          
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+          
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-              <a class="nav-link" href="#">Features</a>
-              <a class="nav-link" href="#">Pricing</a>
-              <a class="nav-link disabled">Disabled</a>
+            <div class="navbar-nav ms-auto"> <!-- ms-auto me tira todos los links hacia la derecha-->
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#registrarseModal">
+                Registrarse</a>
+              <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#iniciarsesionModal">
+                Iniciar sesion</a> 
             </div>
           </div>
+
         </div>
-      </nav>
+    </nav>
+        
+<!-- Modal de iniciar sesion -->
+<div class="modal fade" id="iniciarsesionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Iniciar sesion</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+        <form id="login-form">
+            <label for="email">Correo electronico</label>
+            <input type="text" class="form-control mb-3" placeholder="Email" required>
+            <label for="password">Contraseña</label>
+            <input type="password" class="form-control mb-3" placeholder="********" required>
+            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+        </form>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Modal de registrarse -->
+<div class="modal fade" id="registrarseModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <form id="registrarse-form">
+                <label for="email">Correo electronico</label>
+                <input type="text" class="form-control mb-3" placeholder="Email" required>
+                <label for="password">Contraseña</label>
+                <input type="password" class="form-control mb-3" placeholder="********" required>
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+            </form>  
 
-
+        </div>
+      </div>
+    </div>
+  </div>
 
 
     <!--Boostrap 5+-->
