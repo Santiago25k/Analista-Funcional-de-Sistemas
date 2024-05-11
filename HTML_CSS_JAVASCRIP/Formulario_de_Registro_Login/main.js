@@ -1,1 +1,1 @@
-import './app/firebase.js'
+import './src/app/firebase.js'
