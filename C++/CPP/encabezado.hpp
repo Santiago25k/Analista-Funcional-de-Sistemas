@@ -5,7 +5,7 @@
 #include <iostream>
 
 //Libreria para hacer calculos matematicos de c++
-#include <cmath>
+//#include <cmath>
 //Libreria que proporciona una estructura de datos flexible para almacenar elementos de manera dinámica
 #include <vector>
 

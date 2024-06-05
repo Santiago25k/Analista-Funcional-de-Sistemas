@@ -4,28 +4,33 @@
 
 int main () {
 
-     //Esta linea de codigo hace que al finalizar el programa ".exe" no se cierre. "!!esto funciona en IDE de Visual Studio Code!!"
+    //ruta para que el ejecutable exe no se cierre al finalizar.
     const char* ruta = "C:\\Users\\Aquiles\\Desktop\\GitHub\\C++\\CPP\\ej_multiplo.exe";
 
-
+    //declaramos la variable
     int num;
 
-    cout << "Enter a number to find out if it is a multiple of 10 or not " << endl;
+    //ouput  
+    cout << "Ingresa un numero para saber si es multiplo de 10 o no lo es " << endl;
+    
+    //input  
     cin >> num;
-
-    if ( num % 10 == 0) //Comprueba si el residuo de la división de num por 10 es igual a 0
+   
+   //condicion 
+   //si
+    if ( num % 10 == 0) //expresion logica con operador de resto e igualdad
+    {  
+      //ouput  
+       cout << "El numero ingresado si es multiplo de 10 " << endl;
+    } else //siNo
     {
-       cout << "The number entered if it is a multiple of 10 " << endl;
-    } else
-    {
-     cout << "The number entered is not a multiple of 10 " << endl;
+     //ouput
+     cout << "El numero ingresado no es multiplo de 10 " << endl;
     }
     
-
-     //Esta linea de codigo hace que al finalizar el programa no se cierre. "esto funciona en IDE de Visual Studio Code"
-    system(ruta);
-
+   //ruta para que el ejecutable exe no se cierre al finalizar.
+   system(ruta);
 
 return 0;
-
 }
+

@@ -1,4 +1,5 @@
-//!Algoritmo que reciba como entrada un numero entero de 3 cifras e indique como salida si es capicua o no.
+//!Algoritmno que reciba como entrada un numero entero de tres cifras e indique como salida si es capicua o no.
+
 
 // Libreria estandar de C++
 #include <iostream>
@@ -32,8 +33,8 @@ int main()
       }
    }
 
-   // Ruta para que el ejecutable exe no se cierre al finalizar.
-   const char *ruta = "C:\\Users\\Aquiles\\Desktop\\GitHub\\C++\\CPP\\ej_capicua.exe";
+   //!Ruta para que el ejecutable exe no se cierre al finalizar.
+   const char *ruta = "C:\\Users\\Aquiles\\Desktop\\GitHub\\C++\\CPP\\tiktok\\capicua2.exe";
    system(ruta);
 
    return 0;
