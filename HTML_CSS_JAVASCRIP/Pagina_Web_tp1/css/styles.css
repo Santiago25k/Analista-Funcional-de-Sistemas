@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: white; /* Cambia el color del texto a blanco para que sea legible */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: black; /* Fondo negro */
+    color: white; /* Letras blancas */
+}
+
+.table img {
+    max-width: 100px; /* Define el ancho máximo de la imagen */
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    display: block; /* Hace que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+th, td {
+    border: 1px solid #f00b0b;
+    text-align: left;
+    padding: 8px;
+}
+
+
+tr:hover {
+    background-color: #ae4e90;
+}
