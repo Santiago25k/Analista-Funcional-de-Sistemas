@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   color: white; /* Texto blanco */
+  
 }
 
 /* 
@@ -26,12 +27,16 @@ body {
   text-shadow: 2px 2px 4px rgba(8, 7, 7, 0.936); /* Añade una sombra para resaltar el texto */
 }
 
+/* 
+ *GIFT de portada ; 
+*/
+
 /* Contenedor del video/GIF */
 .video-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../img/portada.gif") no-repeat center center;
+  background: url("../img/portada2.gif") no-repeat center center;
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-attachment: fixed; /* Aplica el efecto parallax */
   z-index: 1;
@@ -58,7 +63,7 @@ body {
  *Título Secundario h2 con IMG y parrafo ; 
 */
 
-/* Estilo del contenedor de subtítulo */
+/* Estilo del contenedor de subtítulo e img */
 .containerSubtitulo {
   position: relative;
   text-align: left;
@@ -115,7 +120,7 @@ body {
 }
 
 /* 
- *Título Terciario H3 con IMG y parrafo; 
+ *Seccion de IMGs con titulo terciaro h3-y parrafo; 
 */
 
 /* Contenedor principal */
@@ -277,7 +282,6 @@ body {
   padding-top: 10VH;
 }
 
-
 /* 
  *Contenedor del GIFT para el cuerpo; 
 */
@@ -304,7 +308,6 @@ body {
 /* 
  *QUERYS.
 */
-
 
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
