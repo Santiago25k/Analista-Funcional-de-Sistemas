@@ -1,13 +1,12 @@
 body {
-  background-color: #000000e2;
+  background-color: #000000fa;
   padding: 0;
   margin: 0;
   color: white; /* Texto blanco */
-  
 }
 
 /* 
- *Título Principal h1 con GIFT ; 
+ *Título Principal h1 con GIFT/Portada/Video ; 
 */
 
 /* Estilo del contenedor del titulo */
@@ -23,26 +22,33 @@ body {
 .containerTittle h1 {
   font-size: 8vh; /* Tamaño fijo para que no cambie con el zoom */
   margin: 0; /* Quita el margen por defecto */
-  color: rgb(229, 223, 247);
+  color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(8, 7, 7, 0.936); /* Añade una sombra para resaltar el texto */
 }
 
 /* 
- *GIFT de portada ; 
+ *GIFT o captura de portada/video ; 
 */
 
-/* Contenedor del video/GIF */
+/* Contenedor de la portada/GIF/Video */
 .video-container {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../img/portada2.gif") no-repeat center center;
-  background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+  /* background: url("../img/capturaportada.PNG") no-repeat center center; */
+  /* background-size: cover; Asegura que la imagen cubra todo el contenedor */
   background-attachment: fixed; /* Aplica el efecto parallax */
   z-index: 1;
 }
 
-/* Capa oscura sobre el video */
+/* Asegúrate de que el video ocupe todo el contenedor */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Capa oscura sobre el portada */
 .video-container::after {
   content: "";
   position: absolute;
@@ -69,14 +75,14 @@ body {
   text-align: left;
   margin: auto; /* Centra el contenedor */
   width: 95%; /* Ajusta el ancho del contenedor dejando un 15% de espacio a cada lado */
-  height: 60vh;
+  height: 70vh;
   background: url("../img/puentevcp1.webp") no-repeat center center;
   background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
   background-attachment: fixed; /* Aplica el efecto parallax */
   padding: 10vh;
   box-sizing: border-box;
   overflow: hidden; /* Asegura que el pseudo-elemento no se desborde */
-  box-shadow: 0 15px 50px rgba(72, 5, 205, 0.3),
+  box-shadow: 0 15px 50px rgba(195, 5, 205, 0.813),
     /* Sombra por debajo */ 15px 0 50px rgba(6, 9, 132, 0.3),
     /* Sombra a la derecha */ -15px 0 50px rgba(6, 9, 132, 0.3); /* Sombra a la izquierda */
 }
@@ -93,17 +99,9 @@ body {
     0,
     0,
     0,
-    0.639
+    0.637
   ); /* Ajusta la opacidad según tus preferencias */
   z-index: 1; /* Asegura que la capa oscura esté por encima de la imagen pero debajo del contenido */
-}
-
-/* Estilo del contenedor de h2 y párrafo */
-.containerSubtitulo h2,
-.containerSubtitulo p {
-  position: relative;
-  z-index: 2; /* Asegura que el texto esté por encima de la capa oscura */
-  color: white;
 }
 
 /* Estilo del h2 */
@@ -112,15 +110,20 @@ body {
   margin: 0;
   padding: 20px 0;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.983); /* Sombra del texto */
+  z-index: 2; /* Asegura que el texto esté por encima de la capa oscura */
+  position: relative;
 }
 
 /* Estilo del párrafo */
 .containerSubtitulo p {
-  font-size: 3vh;
+  font-size: 3.5vh;
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté por encima de la capa oscura */
+  color:white;
 }
 
 /* 
- *Seccion de IMGs con titulo terciaro h3-y parrafo; 
+ *Contenedor de IMGs con titulo terciaro h3-y parrafo; 
 */
 
 /* Contenedor principal */
@@ -144,8 +147,9 @@ body {
   height: auto; /* Mantiene la proporción de la imagen */
   border-top-left-radius: 40px;
   border-bottom-right-radius: 50px; /* Borde redondeado */
-  box-shadow: 0 50px 100px rgba(72, 5, 205, 0.3),
-    0 6px 20px rgba(6, 9, 132, 0.3); /* Sombra de color */
+  box-shadow: 0 50px 100px rgba(72, 5, 205, 0.72),
+    0 -50px 100px rgba(72, 5, 205, 0.651), 0 6px 20px rgba(6, 8, 132, 0.701),
+    0 -6px 20px rgba(6, 9, 132, 0.3); /* Sombra de color */
 }
 
 /* Contenedor del título y párrafo */
@@ -157,20 +161,21 @@ body {
   align-items: center;
   padding: 50px;
   box-sizing: border-box;
-  color: white; 
+  color: white;
 }
 
 /* Estilos para el H3 */
 .tituloH3 h3 {
-  font-size: 6vh; /* Tamaño de fuente del texto */
+  font-size: 6.1vh; /* Tamaño de fuente del texto */
 }
 
 /* Estilos para el parrafo */
 .tituloH3 p {
-  font-size: 3vh; /* Tamaño de fuente del párrafo */
+  font-size: 3.5vh; /* Tamaño de fuente del párrafo */
   text-align: justify;
+  color:white;
+  font-style: italic;
 }
-
 
 /* 
  *Contenedor de TABLAS; 
@@ -182,7 +187,7 @@ body {
   display: flex;
   justify-content: space-between; /* Espacio entre las tablas */
   align-items: center; /* Centra verticalmente las tablas */
-  width: 100%; 
+  width: 100%;
 }
 
 /* Estilos para cada tabla */
@@ -195,23 +200,23 @@ body {
 /* Estilos para el título de la tabla */
 .tabla th {
   position: absolute;
-  top: 50%; /* Ajusta la posición vertical del título */
-  left: 50%; /* Centra horizontalmente */
-  transform: translateX(-50%); /* Centra completamente */
-  color: white; 
-  font-size: 2vw; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2vw;
   background-color: #000000b0; /* Color de fondo */
-  padding: 15px; 
-  border-radius: 10px; 
+  padding: 15px;
+  border-radius: 10px;
 }
 
 /* Estilo para la imagen */
 .tabla img {
-  width: 100%; 
+  width: 100%;
   border-radius: 20px;
-  box-shadow: 0 50px 100px rgba(72, 5, 205, 0.3),
-    0 6px 20px rgba(6, 9, 132, 0.3);
-  opacity: 0.4;  
+  box-shadow: 0 50px 100px rgba(72, 5, 205, 0.837),
+    0 6px 20px rgba(6, 8, 132, 0.823);
+  opacity: 0.5;
 }
 
 /* 
@@ -221,10 +226,10 @@ body {
 .containerBanner {
   position: relative;
   width: 100%;
-  height: 60vh; 
+  height: 60vh;
   background: url("../img/Home-Vivi-Cba-1536x361.png") no-repeat center center;
   background-size: contain; /* Ajusta la imagen para que quepa dentro del contenedor */
-  opacity: 0.6; 
+  opacity: 0.8;
 }
 
 /* 
@@ -237,6 +242,7 @@ body {
   width: 100%;
   padding-top: 56.25%; /* Proporción de 16:9 (9 / 16 * 100) */
   overflow: hidden; /* Evita que el video se desborde */
+  margin-bottom: 50px;
 }
 
 /* Estilos para el video de YouTube */
@@ -244,11 +250,11 @@ body {
   position: absolute;
   top: 10%;
   left: 0;
- 
+  box-shadow: 0 0px 100px rgba(72, 5, 205, 0.679),
+    0 6px 20px rgba(6, 8, 132, 0.649);
   width: 100%;
   height: 100%;
 }
-
 
 /* 
  *Contenedor del FOOTER; 
@@ -256,54 +262,88 @@ body {
 
 /* Estilo del contenedor del footer */
 .container-footer {
-  width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+  position: relative;
+  width: 100%;
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  background-image: url("../img/fondo2.gif");
+  background-size: cover;
+  background-position: center;
 }
 
-/* Estilo de la lista */
+.container-footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Opacidad del 50% */
+  z-index: 1; /* Coloca el pseudo-elemento sobre el fondo */
+}
+
 .container-footer ul {
-  display: flex; /* Utiliza flexbox para la disposición horizontal */
-  justify-content: space-between; /* Distribuye los elementos equitativamente */
+  display: flex;
   padding: 0;
   margin: 0;
-  list-style-type: none; /* Quita los puntos de las listas */
-  
+  list-style-type: none;
+  position: relative; /* Asegura que los elementos de la lista estén por encima del pseudo-elemento */
+  z-index: 2; /* Coloca los elementos de la lista sobre el pseudo-elemento */
 }
 
-/* Estilo de los elementos de lista */
 .container-footer li {
-  flex: 1; /* Hace que cada elemento ocupe el mismo espacio */
-  text-align: center; 
-  font-size: 4vh; 
-  padding: 1vh; /* Espaciado interno del elemento */
-  /* border: 1px solid #fff;  */
-  padding-bottom: 10VH;
-  padding-top: 10VH;
+  margin-top: 40px;
+  flex: 1;
+  text-align: center;
+  font-size: 4vh;
+  padding: 1vh;
+  position: relative; /* Asegura que los elementos de la lista estén por encima del pseudo-elemento */
+  z-index: 2; /* Coloca los elementos de la lista sobre el pseudo-elemento */
 }
+
+.container-footer a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* 
+ *Contenedor del PIE; 
+*/
+
+.pie-pagina {
+  width: 100%; 
+  padding: 15px 0; 
+  text-align: center; 
+  color: white;
+  font-size: 2vh;
+}
+
 
 /* 
  *Contenedor del GIFT para el cuerpo; 
 */
 
 /* Estilos para el GIF animado */
-.gif-container {
-  position: fixed; /* Posición fija para que ocupe toda la ventana */
+/* .gif-container {
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* Ancho completo */
-  height: 100%; /* Altura completa */
-  z-index: -1; /* Colocar detrás del contenido */
+  width: 100%; 
+  height: 100%; 
+  z-index: -1; 
   
 }
 
 .gif-container img {
-  width: 100%; /* Ancho completo */
-  height: 100%; /* Altura completa */
-  object-fit: cover; /* Cubrir toda la ventana sin distorsión */
-}
-
-
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+} */
 
 /* 
  *QUERYS.
@@ -312,68 +352,76 @@ body {
 /* Media Queries para dispositivos móviles */
 @media (max-width: 768px) {
   
+  /* .containerTittle {
+    height: 100%;
+    top: 10%; 
+  } */
+
   /* Ajustar el título principal */
   .containerTittle h1 {
-    font-size: 5vh; /* Reducir tamaño del título */
+    font-size: 5vh; 
   }
 
   /* Ajustar el contenedor de subtítulo */
   .containerSubtitulo {
-    padding: 5vh; /* Reducir el padding */
-    height: auto; /* Ajustar la altura automáticamente */
+    padding: 5vh; 
+    height: auto; 
   }
 
   .containerSubtitulo h2 {
-    font-size: 4vh; /* Reducir tamaño del subtítulo */
+    font-size: 5vh; 
   }
 
   .containerSubtitulo p {
-    font-size: 2.5vh; /* Reducir tamaño del texto del párrafo */
+    font-size: 2.5vh; 
   }
-/* Ajustar la sección de imágenes y texto */
-.seccionimagenes {
-  display: flex;
-  flex-direction: column; /* Cambiar a disposición en columna */
-  height: auto; /* Ajustar la altura automáticamente */
-  width: 100%;
-  margin-bottom: 20px; /* Añadir espacio entre secciones */
-}
+  /* Ajustar la sección de imágenes y texto */
+  .seccionimagenes {
+    display: flex;
+    flex-direction: column; 
+    height: auto; 
+    width: 100%;
+    margin-bottom: 20px; 
+  }
 
-.imagen,
-.tituloH3 {
-  width: 100%; /* Ancho completo */
-  height: auto; /* Ajustar la altura automáticamente */
-  margin: 0; /* Quitar márgenes */
-}
+  .imagen,
+  .tituloH3 {
+    display: flex;
+    justify-content: center;
+  }
 
-.imagen img {
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-  height: auto; /* Mantiene la proporción de la imagen */
-  border-top-left-radius: 20px; /* Reducir el borde redondeado */
-  border-bottom-right-radius: 20px; /* Reducir el borde redondeado */
-  box-shadow: 0 50px 100px rgba(72, 5, 205, 0.3), 0 6px 20px rgba(6, 9, 132, 0.3); /* Sombra de color */
-}
+  .imagen img {
+    margin-top: 40px;
+    width: 90%; 
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-top-left-radius: 20px; 
+    border-bottom-right-radius: 20px; /* Reducir el borde redondeado */
+    box-shadow: 0 50px 100px rgba(72, 5, 205, 0.3),
+      0 -50px 100px rgba(72, 5, 205, 0.3), 0 6px 20px rgba(6, 9, 132, 0.3),
+      0 -6px 20px rgba(6, 9, 132, 0.3); /* Sombra de color */
+  }
+  .tituloH3 h3 {
+    font-size: 4.1vh; 
+    margin: 10px auto; 
+    text-align: center; 
+    padding: 5px; 
+    width: 100%;
+  }
 
-.tituloH3 h3 {
-  font-size: 5vh; /* Reducir tamaño del texto del h3 */
-  margin: 10px 0; /* Añadir espacio arriba y abajo del h3 */
-  text-align: center; /* Centrar el texto */
-}
+  .tituloH3 p {
+    font-size: 2.5vh; 
+    margin: 5px 0px; 
+    text-align: center; 
+  }
 
-.tituloH3 p {
-  font-size: 2.5vh; /* Reducir tamaño del texto del párrafo */
-  margin: 10px 10px; /* Añadir espacio alrededor del párrafo */
-  text-align: center; /* Justificar el texto */
-}
-
-/* Revertir el orden de los elementos */
-.seccionimagenes:nth-child(2n) {
-  flex-direction: column-reverse;
-}
+  /* Revertir el orden de los elementos */
+  .seccionimagenes:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
 
   /* Ajustar el contenedor de tablas */
   .tabla-container {
-    flex-direction: column; /* Cambiar a disposición en columna */
+    flex-direction: column;
     align-items: stretch; /* Estirar los elementos */
     margin-top: 5%;
   }
@@ -384,28 +432,27 @@ body {
   }
 
   .tabla th {
-    font-size: 3vh; /* Reducir tamaño del título */
+    font-size: 3vh; 
   }
 
   /* Ajustar el contenedor del banner */
   .containerBanner {
-    height: 20vh; /* Reducir altura del banner */
-    
+    height: 20vh; 
   }
 
   /* Ajustar el contenedor del video de YouTube */
   .videoyt-container {
-    padding-top: 75%; /* Ajustar la proporción para video */
+    padding-top: 75%; 
   }
 
   /* Ajustar el footer */
   .container-footer ul {
-    flex-direction: column; /* Cambiar a disposición en columna */
+    flex-direction: column; 
   }
 
   .container-footer li {
-    font-size: 3vh; /* Reducir tamaño del texto */
-    padding-bottom: 5vh; /* Reducir padding inferior */
-    padding-top: 5vh; /* Reducir padding superior */
+    font-size: 3vh; 
+    padding-bottom: 5vh; 
+    padding-top: 5vh; 
   }
 }
