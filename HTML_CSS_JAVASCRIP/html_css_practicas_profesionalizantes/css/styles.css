@@ -1,3 +1,8 @@
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap'); */
+
+
 body {
     background-color: black;
     color: white; /* Cambia el color del texto a blanco para que sea legible */
@@ -30,3 +35,15 @@ th, td {
 tr:hover {
     background-color: #ae4e90;
 }
+
+
+.bungee-spice-regular h4 {
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 10vh;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  
