@@ -40,7 +40,6 @@ int main() {
         cout << numeros << endl;
         numeros--;
     }
-
-
+    
     return 0;
 }
