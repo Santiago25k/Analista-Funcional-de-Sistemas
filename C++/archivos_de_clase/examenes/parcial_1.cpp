@@ -1,3 +1,6 @@
+//! Parcial 1
+//! 10 VENDEDORES- REGISTRO Y CONTROL DE VENTAS- CANTIDAD DE VENDEDOR
+
 #include <iostream>
 using namespace std;
 
@@ -10,19 +13,20 @@ int main()
 
     while (contador < 10)
     {
-        cout << "Ingrese las ventas del vendedor " << contador + 1 << " : ";
+        cout << "Ingrese las ventas del vendedor " << contador + 1 << ": ";
         cin >> numeros[contador];
         suma += numeros[contador];
         contador++;
     }
 
     cout << " La cantidad total de ventas que hicieron los vendedores en el dia fueron: " << suma << endl;
+    cout << "****************************************************************************" << endl;
 
     int visualizar;
-    cout << "Ingrese un numero del 1-10 para saber cuantas ventas hizo el vendedor ";
+    cout << "Ingrese un numero del 1-10 para saber cuantas ventas hizo el vendedor: ";
     cin >> visualizar;
 
-    // Validar que el número ingresado esté dentro del rango
+    //! Validar que el número ingresado esté dentro del rango
     if (visualizar >= 1 || visualizar <= 10)
     {
         cout << "El vendedor " << visualizar << endl;
