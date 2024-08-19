@@ -1,0 +1,40 @@
+ 
+La  panificadora “QChurrería”  de  Quilmes,  dedicada  a  la  fabricación  de  churros,  es  la  principal 
+proveedora  de  las  panaderías  y  mercados  de  la  zona.  De  acuerdo  con  su  capacidad  productiva, 
+puede  fabricar  como  máximo  1000  churros  por  día.  Para  realizar  una  compra  cada  cliente  debe 
+contactarse  el  día  anterior y reservar  su  pedido. Quien toma  cada  pedido  es  el/la  encargado/a  de 
+ventas. 
+
+
+Se requiere un programa con el siguiente menú: 
+ I: Ingresar un pedido. 
+ M: Modificar un pedido. 
+R: Generar reporte. 
+ S: Salir 
+Al seleccionar la opción I, M o R deberá ejecutarse la funcionalidad escogida y a posterior mostrar 
+nuevamente el menú para una nueva elección. Por último, al seleccionar la opción S se finalizará. 
+ 
+Detalle: 
+ 
+Al seleccionar I: 
+- Se  visualizará  la  cantidad  de  churros  disponibles,  en  base  a:  la  cantidad  de  pedidos  tomados 
+hasta ese momento y la máxima capacidad productiva. 
+- El usuario/a podrá ingresar la cantidad de churros solicitados por el/la cliente, la cual deberá ser 
+mayor que cero – si no cumple con esa condición se solicitará su reingreso hasta ser correcta. 
+- Según corresponda, se mostrará uno de los siguientes mensajes: 
+• “Pedido  aceptado.  Número  de  pedido:  x  ”.  Un  pedido  será  aceptado  siempre  que  su 
+cantidad no exceda la cantidad de churros disponibles hasta ese momento. En este caso, 
+se agregará el pedido para su producción y se informará el número del pedido x asignado 
+- correspondiente a su orden (x toma valores enteros desde 1 en adelante). Es decir, al 
+primer  pedido  aceptado se  le  asignará  el  número  1,  al  segundo  pedido aceptado  se  le 
+asignará el 2, y así sucesivamente. 
+• “Pedido  rechazado”.  Un  pedido  será  rechazado  si  su  cantidad  excede  la  cantidad  de 
+churros  disponibles.  En  este  caso,  el  pedido  será  descartado  y  no  se  agregará  a  la 
+producción. 
+ 
+Al seleccionar M: 
+- El usuario/a deberá ingresar el número de pedido que desea modificar.  
+- Una vez ingresado, se deberá mostrar la cantidad de churros existentes para ese pedido. 
+- A posterior, el usuario/a deberá ingresar la nueva cantidad de churros, la cual deberá ser mayor 
+que cero – si no cumple con esa condición se solicitará su reingreso hasta ser correcta. 
+- Por último, se mostrará uno de los siguientes mensajes según corresponda: 
