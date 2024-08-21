@@ -32,15 +32,15 @@ int main() {
         cin >> numeros;
     }
 
-    int contador = 0;
-    //mostrar todos los numeros entre el 0 hasta el que se ingreso de manera creciente
+    int contador = 1;
+    //mostrar todos los numeros entre el 1 hasta el que se ingreso de manera creciente
     while (contador <= numeros)
     {
         cout << contador << endl;
         contador++;
     }
     
-    cout << "los numeros ingresados fueron: " << numeros;
+    cout << "El numero que se ingreso fue: " << numeros;
     
 
     return 0;
