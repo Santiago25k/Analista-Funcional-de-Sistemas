@@ -24,7 +24,9 @@ int main()
     int visualizar = 0;
     cout << "Cuantos analistas desea visualizar?: ";
     cin >> visualizar;
+
     contador = 0; 
+    
     while (contador < visualizar)
     {
         cout << "El analista " << contador + 1 << " hizo un total de: " << numeros[contador] << " horas." << endl;
