@@ -19,7 +19,7 @@ int main() {
 
     while(contador < 10){
 
-        cout << "ingresa el numero " << contador +1 << " : " << endl;
+        cout << "ingresa el numero " << contador +1 << ": ";
         cin >> numeros[contador];
         
         if (numeros[contador] < 0)
