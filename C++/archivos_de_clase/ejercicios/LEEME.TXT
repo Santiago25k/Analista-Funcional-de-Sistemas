@@ -1,4 +1,4 @@
-En esta carpeta encontraras algunos ejercicios basicos de Algoritmos y Estructura de Datos
+En esta carpeta encontraras algunos ejercicios de Algoritmos y Estructura de Datos
 
 ej_1
 //! Promedio de Calificaciones:
