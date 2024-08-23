@@ -1,0 +1,46 @@
+En esta carpeta encontraras algunos ejercicios basicos de Algoritmos y Estructura de Datos
+
+ej_1
+//! Promedio de Calificaciones:
+// Escribe un programa que solicite al usuario que ingrese las calificaciones de 5 estudiantes. Luego, calcula y muestra el promedio de esas calificaciones.
+
+ej_2
+//! Encuentra el Número Mayor:
+// Crea un programa que le pida al usuario que ingrese 10 números enteros. El programa debe determinar y mostrar cuál es el mayor de los números ingresados.
+
+ej_3
+//! Cuenta Números Pares e Impares:
+// Escribe un programa que le pida al usuario que ingrese 10 números enteros. Luego, cuenta y muestra cuántos de esos números son pares y cuántos son impares.
+
+ej_4
+//! Calculadora Simple
+// Desarrolla una calculadora que permita al usuario realizar las operaciones básicas (suma, resta, multiplicación y división) entre dos números. El usuario debe ingresar los dos números y la operación que desea realizar.
+
+ej_5
+//!Invertir un Arreglo
+//Crea un programa que le pida al usuario que ingrese 5 números. Luego, muestra esos números en orden inverso.
+
+ej_6
+//! Tabla de Multiplicar
+// Escribe un programa que solicite al usuario que ingrese un número y luego imprima la tabla de multiplicar de ese número (del 1 al 10).
+
+ej_7
+//! Cálculo de Factorial
+// Desarrolla un programa que calcule el factorial de un número ingresado por el usuario. Por ejemplo, si el usuario ingresa 5, el programa debe calcular y mostrar 5! (5 factorial).
+
+ej_8
+//!Suma de Números Naturales
+//Crea un programa que pida al usuario un número n y luego calcule la suma de los primeros n números naturales (1 + 2 + 3 + ... + n).
+
+ej_9
+//!Cálculo de Potencia
+//Escribe un programa que pida al usuario que ingrese una base y un exponente. Luego, calcula y muestra el resultado de elevar la base al exponente.
+
+ej_ex1
+//! parcial 1
+
+ej_ex2
+//! parcial 2
+
+ej_ex3
+//! parcial 3
