@@ -1,6 +1,6 @@
 //! PROYECTO LOGIN
 
-#include <iostream>.
+#include <iostream>
 #include <cstring> //Biblioteca para manipular cadenas de texto usando strcm(string compare), entre otras.
 
 using namespace std;
