@@ -1,0 +1,3 @@
+En este carpeta subire todos los proyectos en C++, como Login, que al ingresar tiene el sistema de churros que hice para un trabajo practico..
+tambien tengo pensado hacer juegos y sistemas bancarios, entro otros que se me vengan a la mente.. =)
+Sin embargo cuando termine de hacerlos voy a crearles interfaz grafica usando algun framework de C++ para plataformas como Windows y Android.
