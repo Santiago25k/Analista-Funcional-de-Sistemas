@@ -1,10 +1,7 @@
 //! PROYECTO LOGIN
 
-#include <iostream>
-#include <cstdlib>   // Biblioteca que contiene funciones para la gestion de memoria dinamica y otras utilidades.
-#include <conio.h>   // Biblioteca especifica de Windows para entrada de teclado sin necesidad de presionar "Enter".
-#include <windows.h> // Biblioteca especifica de Windows para manipulacion de la consola y otras funciones del sistema operativo.
-#include <cstring>   // Para strlen, strcmp,
+#include <iostream>.
+#include <cstring> //Biblioteca para manipular cadenas de texto usando strcm(string compare), entre otras.
 
 using namespace std;
 
