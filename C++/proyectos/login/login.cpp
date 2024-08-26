@@ -79,8 +79,8 @@ void menu()
 
     while (true)
     {
-
-        cout << "#########################################################" << endl;
+        
+        cout << "#######################santiercoles######################" << endl;
         cout << "             S I S T E M A DE C H U R R O S   " << endl;
         cout << "#########################################################" << endl;
         cout << "I: Ingresar pedido" << endl;
@@ -245,9 +245,9 @@ void menu()
 int main()
 {
     //system("COLOR 0F");
-    system("COLOR 0A"); 
+    system("COLOR 0A");//esto le da color a la consola y a las letras.
 
-    cout << "#######################################################" << endl;
+    cout << "#####################santiercoles######################" << endl;
     cout << "               I N I C I A R  S E S I O N  " << endl;
     cout << "#######################################################" << endl;
     // Llama a la funcion de inicio de sesion.
