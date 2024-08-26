@@ -92,9 +92,9 @@ void menu()
 
         opcion = toupper(opcion); // Convierte la opcion ingresada a mayúsculas para asegurar una comparación uniforme.
 
-        if (opcion == 'I')
+         if (opcion == 'I')
         {
-            //? Lógica para ingresar un pedido.
+            //? Logica para ingresar un pedido.
 
             //! 1: Mostrar la cantidad de churros disponibles.
             cout << "Cantidad de churros disponibles: " << churrosDisponibles << endl;
@@ -112,7 +112,7 @@ void menu()
             //! 4: Verificar que la cantidad pedida no exceda los churros disponibles.
             if (cantidadPedida <= churrosDisponibles)
             {
-                //! 5: Guardar el pedido y mostrar un mensaje de confirmación.
+                //! 5: Guardar el pedido y mostrar un mensaje de confirmacion.
                 pedidos[numeroDePedidos] = cantidadPedida;
                 churrosDisponibles -= cantidadPedida;
                 cout << "Pedido aceptado, numero de pedido: " << numeroDePedidos + 1 << endl;
@@ -125,11 +125,11 @@ void menu()
         }
         else if (opcion == 'M')
         {
-            //? Lógica para modificar un pedido.
+            //? Logica para modificar un pedido.
 
             int numeroPedidoModificar;
 
-            //! 1. Solicitar el número del pedido que se quiere modificar.
+            //! 1. Solicitar el numero del pedido que se quiere modificar.
             cout << "Ingresa el numero de pedido a modificar, en total hay: " << numeroDePedidos << " pedidos " << endl;
             cin >> numeroPedidoModificar;
 
@@ -165,7 +165,7 @@ void menu()
                 //! 8. Ajustar la cantidad de churros disponibles.
                 churrosDisponibles -= diferencia;
 
-                //! 9. Mostrar un mensaje de confirmación.
+                //! 9. Mostrar un mensaje de confirmacion.
                 cout << "Pedido modificado exitosamente." << endl;
             }
             else
@@ -175,7 +175,7 @@ void menu()
         }
         else if (opcion == 'R')
         {
-            //? Lógica para generar reporte.
+            //? Logica para generar reporte.
 
             //! 1. Verificar si hay pedidos registrados.
             if (numeroDePedidos == 0)
@@ -204,14 +204,14 @@ void menu()
         }
         else if (opcion == 'S')
         {
-            //? Lógica para salir del programa.
+            //? Logica para salir del programa.
 
             //! 1. Confirmar que el usuario realmente desea salir.
             char confirmacion;
-            cout << "¿Estas seguro que deseas salir? (S/N): ";
+            cout << "Estas seguro que deseas salir? (S/N): ";
             cin >> confirmacion;
 
-            //! 2. Convertir la respuesta del usuario a mayúsculas para simplificar la comparación.
+            //! 2. Convertir la respuesta del usuario a mayusculas para simplificar la comparacion.
             confirmacion = toupper(confirmacion);
 
             //! 3. Validar la respuesta del usuario permitiendo solo 'S' o 'N'.
@@ -219,7 +219,7 @@ void menu()
             {
                 cout << "Opcion no valida. Ingresa 'S' para salir o 'N' para continuar: ";
                 cin >> confirmacion;
-                confirmacion = toupper(confirmacion); // Convertir a mayúsculas nuevamente.
+                confirmacion = toupper(confirmacion); // Convertir a mayusculas nuevamente.
             }
 
             //! 4. Si el usuario confirma con 'S', salir del programa.
@@ -230,7 +230,7 @@ void menu()
             }
             else
             {
-                //! 5. Si el usuario no confirma, continuar con el menú.
+                //! 5. Si el usuario no confirma, continuar con el menu.
                 cout << "Continuando con el programa..." << endl;
             }
         }
