@@ -2,9 +2,8 @@
 
 -HTML
 -CSS
--PHP
 -C++
--Bases de datos SQL y proyectos que ire subiendo a medida que avance la cursada
+-Bases de datos SQL
 
 
 <--------------------------------------------->Santiago Ercoles<----------------------------------------------------------->
