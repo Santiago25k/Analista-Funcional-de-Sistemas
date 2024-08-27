@@ -11,4 +11,4 @@ En este repositorio encontraras
 -Bases de datos SQL y proyectos que ire subiendo a medida que avance la cursada
 
 
-💞️ <------------------------------>Hi, I love programming! @AquilesR22 <------------------------------>💞️
+💞️ <------------------------------>Santiago ERCOLES <------------------------------>💞️
