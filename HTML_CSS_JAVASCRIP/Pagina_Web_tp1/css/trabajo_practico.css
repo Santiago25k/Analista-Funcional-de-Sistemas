@@ -30,6 +30,7 @@ body {
  *GIFT o captura de portada/video ; 
 */
 
+
 /* Contenedor de la portada/GIF/Video */
 .video-container {
   position: relative;
@@ -64,6 +65,7 @@ body {
   ); /* Ajusta el valor de la opacidad según tus preferencias */
   z-index: 10; /* Asegura que la capa oscura esté por encima del video pero debajo del título */
 }
+
 
 /* 
  *Título Secundario h2 con IMG y parrafo ; 
