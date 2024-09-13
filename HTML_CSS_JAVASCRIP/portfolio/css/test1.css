@@ -1,0 +1,175 @@
+body {
+    background-color: #000000fa;
+    padding: 0;
+    margin: 0;
+    color: white; /* Texto blanco */
+  }
+  
+  /* 
+   *Título Principal h1; 
+  */
+  
+  /* Estilo del contenedor del titulo */
+  .containerTittle {
+    text-align: center;
+    height: 50%;
+    width: 100%;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    
+    z-index: 15; /* Asegura que el título esté por encima de la capa oscura */
+  }
+  
+  /* Estilo del título */
+  .containerTittle h1 {
+    font-size: 13vh; /* Tamaño fijo para que no cambie con el zoom */
+    margin: 0; /* Quita el margen por defecto */
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(8, 7, 7, 0.936); /* Añade una sombra para resaltar el texto */
+  }
+  
+  .containerTittle h2 {
+    font-size: 6vh;
+    color: #4CAF50;
+    text-align: center;
+  }
+  
+  .containerTittle p {
+    font-size: 2.5vh;
+    text-align: center;
+  }
+  
+  /* Estilos para centrar el botón y darle bordes */
+  #slideButton {
+    display: block;
+    margin: 5vh auto; /* Centra el botón debajo del párrafo */
+    padding: 10px 20px;
+    border: 1px solid #ffffff; /* Borde de 1px */
+    background-color: #0000001f;
+    cursor: pointer;
+    border-radius: 30px; /* Bordes cuadrados */
+    color: white;
+    transition: background-color 0.2s ease-in-out; /* Add a transition effect */
+    animation: pulse 4s infinite;
+  }
+  
+  
+  #slideButton:hover {
+    background-color: #0db6674d; /* Change background color on hover */
+    border-color: #ffffff; /* Change border color on hover */
+  }
+  
+  #slideButton:active {
+    background-color: #0000007f; /* Change background color on click */
+    border-color: #ffffff; /* Change border color on click */
+    transform: translateY(2.5px) /* Add a slight movement on click */
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    800% {
+      transform: scale(1);
+    }
+  }
+  
+
+  
+/* 
+ *FONDO ESTRELLADO; 
+*/
+.container {
+  
+    background-image: linear-gradient(#051327, #000);
+    inset: 0;
+    position: fixed;
+    z-index: -10;
+  }
+  
+  .space {
+    --size: 2px;
+    --space-layer: 
+      4vw 50vh 0 #fff,
+      18vw 88vh 0 #fff,
+      73vw 14vh 0 #fff;
+    
+    width: var(--size);
+    height: var(--size);
+    background: white;
+    box-shadow: var(--space-layer);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+  }
+  
+  .space {
+    animation: move var(--duration) linear infinite;
+  }
+  
+  @keyframes move {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100vh); }
+  }
+
+
+  
+/* 
+ *Título Secundario h2 con IMG y parrafo ; 
+*/
+
+/* Estilo del contenedor de subtítulo e img */
+.containerSubtitulo {
+    position: relative;
+    text-align: center;
+    margin: auto; /* Centra el contenedor */
+    width: 95%; /* Ajusta el ancho del contenedor dejando un 15% de espacio a cada lado */
+    height: 70vh;
+    background: url("../img/puentevcp1.webp") no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra todo el contenedor */
+    background-attachment: fixed; /* Aplica el efecto parallax */
+    padding: 10vh;
+    box-sizing: border-box;
+    overflow: hidden; /* Asegura que el pseudo-elemento no se desborde */
+    
+  }
+  
+  /* Capa oscura sobre la imagen */
+  /* .containerSubtitulo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(
+      0,
+      0,
+      0,
+      0.637
+    ); 
+    z-index: 1; 
+  }
+   */
+  /* Estilo del h2 */
+  .containerSubtitulo h2 {
+    font-size: 6vh; /* Ajuste del tamaño de fuente */
+    margin: 0;
+    padding: 20px 0;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.983); /* Sombra del texto */
+    z-index: 2; /* Asegura que el texto esté por encima de la capa oscura */
+    position: relative;
+  }
+  
+  /* Estilo del párrafo */
+  .containerSubtitulo p {
+    font-size: 3.5vh;
+    position: relative;
+    z-index: 2; /* Asegura que el texto esté por encima de la capa oscura */
+    color:white;
+  }
+  

@@ -1,0 +1,153 @@
+body {
+  background-color: #000000fa;
+  padding: 0;
+  margin: 0;
+  color: white; /* Texto blanco */
+}
+
+/* 
+ *Título Principal h1 con ; 
+*/
+
+/* Estilo del contenedor del titulo */
+.containerTittle {
+  position: absolute;
+  top: 35%; /* Ajusta según tus preferencias */
+  width: 100%;
+  text-align: center;
+  z-index: 15; /* Asegura que el título esté por encima de la capa oscura */
+}
+
+/* Estilo del título */
+.containerTittle h1 {
+  font-size: 13vh; /* Tamaño fijo para que no cambie con el zoom */
+  margin: 0; /* Quita el margen por defecto */
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(8, 7, 7, 0.936); /* Añade una sombra para resaltar el texto */
+}
+
+.containerTittle h2 {
+  font-size: 6vh;
+  color: #4CAF50;
+  text-align: center;
+}
+
+.containerTittle p {
+  font-size: 2.5vh;
+  text-align: center;
+}
+
+/* Estilos para centrar el botón y darle bordes */
+#slideButton {
+  display: block;
+  margin: 5vh auto; /* Centra el botón debajo del párrafo */
+  padding: 10px 20px;
+  border: 1px solid #ffffff; /* Borde de 1px */
+  background-color: #0000001f;
+  cursor: pointer;
+  border-radius: 30px; /* Bordes cuadrados */
+  color: white;
+  transition: background-color 0.2s ease-in-out; /* Add a transition effect */
+  animation: pulse 4s infinite;
+}
+
+
+#slideButton:hover {
+  background-color: #0db6674d; /* Change background color on hover */
+  border-color: #ffffff; /* Change border color on hover */
+}
+
+#slideButton:active {
+  background-color: #0000007f; /* Change background color on click */
+  border-color: #ffffff; /* Change border color on click */
+  transform: translateY(2.5px) /* Add a slight movement on click */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  800% {
+    transform: scale(1);
+  }
+}
+
+
+/* 
+ *FONDO ESTRELLADO; 
+*/
+.container {
+  
+  background-image: linear-gradient(#051327, #000);
+  inset: 0;
+  position: fixed;
+  z-index: -10;
+}
+
+.space {
+  --size: 2px;
+  --space-layer: 
+    4vw 50vh 0 #fff,
+    18vw 88vh 0 #fff,
+    73vw 14vh 0 #fff;
+  
+  width: var(--size);
+  height: var(--size);
+  background: white;
+  box-shadow: var(--space-layer);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+}
+
+.space {
+  animation: move var(--duration) linear infinite;
+}
+
+@keyframes move {
+  from { transform: translateY(0); }
+  to { transform: translateY(-100vh); }
+}
+
+
+/* Estilos para el nuevo div */
+#newSection {
+  margin-top: 100% auto;
+  padding: 20px;
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+
+/* 
+ *QUERYS.
+*/
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+  
+  .containerTittle {
+    
+    top: 25%; /* Ajusta según tus preferencias */
+
+  }
+  
+  
+  /* Ajustar el título principal */
+    .containerTittle h1 {
+      font-size: 7vh; 
+    }
+
+    .containerTittle h2 {
+      font-size: 4vh; 
+    }
+
+    .containerTittle p {
+      font-size: 2.5vh; 
+    }
+}
