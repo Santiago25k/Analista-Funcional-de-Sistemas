@@ -4,9 +4,8 @@ body {
   margin: 0;
   color: white;
 }
-
 /* 
- *Container Principal  ; 
+ *Container Principal; 
 */
 
 .containerPrincipal {
@@ -18,21 +17,45 @@ body {
   position: relative; /* Asegura que el z-index funcione correctamente */
 }
 
-/* .containerPrincipal h1 {
-  font-size: 13vh;
-  margin: 0;
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px rgba(8, 7, 7, 0.936);
-} */
-
 .containerPrincipal h2 {
-  font-size: 6vh;
+  font-size: 6.5vh;
   color: #4caf50;
 }
 
+.containerPrincipal h3 {
+  font-size: 3.5vh;
+}
+
 .containerPrincipal p {
-  font-size: 13vh;
+  font-size: 15.5vh;
   margin: 0;
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.cssanimation {
+  animation-duration: 4s;
+  animation-fill-mode: both;
+  display: inline-block; /* Esto permite que el texto se centre */
+}
+
+.cssanimation span {
+  display: inline-block;
+}
+
+.open {
+  width: auto; /* Elimina el ancho fijo */
+  margin: 0 auto;
+  overflow: hidden;
+  animation-name: open;
+}
+
+@keyframes open {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; /* Asegura que crezca según el contenido */
+  }
 }
 
 /*
