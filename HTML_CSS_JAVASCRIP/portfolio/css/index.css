@@ -10,20 +10,11 @@ body {
 
 .containerPrincipal {
   text-align: center;
-  height: 100vh; /* Asegura que ocupe toda la altura de la vista */
+  height: 55vh; /* Asegura que ocupe toda la altura de la vista */
   width: 100%;
   padding-top: 30vh; /* Ajusta el espaciado superior */
   z-index: 999; /* Asegúrate de que esté por encima de todos los elementos */
   position: relative; /* Asegura que el z-index funcione correctamente */
-}
-
-.containerPrincipal h2 {
-  font-size: 6.5vh;
-  color: #4caf50;
-}
-
-.containerPrincipal h3 {
-  font-size: 3.5vh;
 }
 
 .containerPrincipal p {
@@ -31,6 +22,18 @@ body {
   margin: 0;
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
+
+.containerPrincipal h2 {
+  font-size: 6.8vh;
+  color: #4caf50;
+  
+}
+
+.containerPrincipal h3 {
+  font-size: 3.5vh;
+  font-style: italic;
+}
+
 
 .cssanimation {
   animation-duration: 4s;
@@ -98,5 +101,137 @@ body {
   }
 }
 
+/*
+ *; 
+*/
+
+/* Contenedor principal */
+.image-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Altura completa de la pantalla */
+}
+
+/* Contenedor de la imagen */
+.imagen {
+  flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  z-index: 999;
+}
+
+/* Estilos para la imagen */
+.imagen img {
+  width: 80%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 0.8s ease; /* Transición suave para el balanceo */
+  transform-origin: top center; /* Establece el punto de rotación en la parte supeior */
+}
+
+/* Efecto hover: balancea la imagen */
+.imagen img:hover {
+  transform: rotate(10deg); /* Rota la imagen 10 grados para crear el balanceo */
+}
+
+/* Contenedor de encabezados*/
+.container-encabezados {
+  flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente */
+  align-items: normal;
+  padding: 50px;
+  box-sizing: border-box;
+  color: white;
+ margin-top: 60px;
+ z-index: 999;
+}
+
+/* Estilos para el H2 */
+.container-encabezados h2 {
+  font-size: 6.8vh;
+  color: #4caf50;
+  font-weight: bold; /* Resalta el H2 */
+}
+
+/* Estilos para el H3 */
+.container-encabezados h3 {
+  font-size: 3.5vh;
+  color: #ffffff; 
+  font-style: italic; /* Añade un toque de elegancia */
+  letter-spacing: 1px; /* Espaciado entre letras para más claridad */
+  word-spacing: 5px; /* Añade más espacio entre las palabras */
+  padding: 0.5vh 0; /* Espaciado para mejor legibilidad */
+}
+
+/*
+ *Icon Container; 
+*/
+
+/* Contenedor principal */
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6vh 0;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+/* Estilo del encabezado */
+.icon-container h2 {
+  font-size: 6.8vh;
+  color: #4caf50;
+  font-weight: bold; /* Resalta el H2 */
+  text-align: center;
+  margin-bottom: 5vh;
+  z-index: 999;
+}
+
+/* Fila de íconos */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los íconos bajen si hay poco espacio */
+  padding: 5vh 0;
+  gap: 5vh; /* Espacio entre íconos */
+  z-index: 999;
+}
+
+/* Contenedor de cada ícono y nombre */
+.icon-item {
+  text-align: center;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Estilos de los íconos */
+.icon {
+  width: 15vh;
+  height: auto;
+  
+}
+
+/* Estilos de los nombres de los íconos */
+.icon-name {
+  font-size: 2.5vh;
+  color: #fffefe;
+  margin-top: 1vh;
+  
+}
+
+/* Efectos de hover en los íconos */
+.icon-item:hover .icon {
+  transform: scale(1.1); /* Aumenta el tamaño del ícono */
+  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.3)); /* Sombra más pronunciada */
+}
 
 
+.icon-item:hover {
+  transform: translateY(-30px); /* Mueve el contenedor del ícono hacia arriba */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Añade sombra adicional */
+  
+}
