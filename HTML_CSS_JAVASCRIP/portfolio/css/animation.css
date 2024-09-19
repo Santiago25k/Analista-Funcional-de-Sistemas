@@ -14,7 +14,7 @@
 }
 
 /*
-  *SHIP ALIEN; 
+  *ROCKETALIEN; 
 */
 
 .spaceship {
@@ -22,7 +22,7 @@
   bottom: -50px; /* Empieza fuera de la pantalla (abajo) */
   right: -50px; /* Empieza fuera de la pantalla (derecha) */
   animation: spaceship-move 8s linear forwards; /* Animación de la nave */
-  animation-delay: 4s; /* Retraso en la animación del OVNI */
+  animation-delay: 4s; /* Retraso en la animación del rocket alien */
 }
 
 .spaceship img {
@@ -32,7 +32,7 @@
 
 
 /*
-  *Animación de SHIP ALIEN ; 
+  *Animación de ROCKET ALIEN ; 
 */
 
 @keyframes spaceship-move {
