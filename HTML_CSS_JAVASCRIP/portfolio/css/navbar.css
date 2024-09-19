@@ -16,7 +16,7 @@
 
 .navbar .logo h1 {
   color: white;
-  font-size: 4.5vh;
+  font-size: 5.5vh;
   margin: 0;
   align-items: center;
 }
@@ -37,11 +37,11 @@
   text-decoration: none;
   color: white;
   padding: 1vh 2vh;
-  font-size: 2.5vh;
+  font-size: 3.5vh;
 }
 
 .nav-links a:hover {
-  background-color: #0db6674d;
-  border-radius: 30px;
+  
+  
   border-bottom: 3px solid #0db667; /* Línea debajo del enlace */
 }
