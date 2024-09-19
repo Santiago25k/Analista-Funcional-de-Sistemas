@@ -102,7 +102,7 @@ body {
 }
 
 /*
- *; 
+ *Seccion de IMGs con ENCABEZADO H2 Y H3; 
 */
 
 /* Contenedor principal */
@@ -119,6 +119,7 @@ body {
   justify-content: center; /* Centra la imagen horizontalmente */
   align-items: center; /* Centra la imagen verticalmente */
   z-index: 999;
+  padding-top: 80px;
 }
 
 /* Estilos para la imagen */
@@ -131,20 +132,19 @@ body {
 
 /* Efecto hover: balancea la imagen */
 .imagen img:hover {
-  transform: rotate(10deg); /* Rota la imagen 10 grados para crear el balanceo */
+  transform: rotate(20deg); /* Rota la imagen 10 grados para crear el balanceo */
 }
 
-/* Contenedor de encabezados*/
+/* Contenedor de encabezados h2*/
 .container-encabezados {
   flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
   display: flex;
   flex-direction: column;
   justify-content: center; /* Centra el texto verticalmente */
-  align-items: normal;
   padding: 50px;
-  box-sizing: border-box;
+  
   color: white;
- margin-top: 60px;
+ margin-top: 50px;
  z-index: 999;
 }
 
