@@ -12,28 +12,35 @@ body {
   text-align: center;
   height: 55vh; /* Asegura que ocupe toda la altura de la vista */
   width: 100%;
-  padding-top: 30vh; /* Ajusta el espaciado superior */
+  padding-top: 22vh; /* Ajusta el espaciado superior */
+  padding-bottom: 20vh;
   z-index: 999; /* Asegúrate de que esté por encima de todos los elementos */
   position: relative; /* Asegura que el z-index funcione correctamente */
 }
 
 .containerPrincipal p {
   font-size: 15.5vh;
-  margin: 0;
+
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
 .containerPrincipal h2 {
-  font-size: 6.8vh;
-  color: #4caf50;
-  
+  font-size: 10vh;
+  /* color: #4caf50; original color */
+  color: #0eee15;
+  font-weight: bold;
 }
 
 .containerPrincipal h3 {
-  font-size: 3.5vh;
+  font-size: 5vh;
   font-style: italic;
+  padding-bottom: 5vh;
+  font-weight: bold;
 }
 
+/* 
+ *Animacion del parrafo; 
+*/
 
 .cssanimation {
   animation-duration: 4s;
@@ -53,41 +60,40 @@ body {
 }
 
 @keyframes open {
-  from { 
-    width: 0; 
+  from {
+    width: 0;
   }
-  to { 
+  to {
     width: 100%; /* Asegura que crezca según el contenido */
   }
 }
 
 /*
- *Estilos para centrar el boton 
+ *Estilos para el boton;
 */
 
 #slideButton {
   display: block;
   margin: 5vh auto;
   padding: 10px 20px;
-  border: 1px solid #4bd40e;
+  letter-spacing: 2px; /* Espaciado de letras para darle aire */
   background-color: #0000001f;
+  /* border-radius: 30px; */
   cursor: pointer;
-  border-radius: 30px;
   color: white;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.8s ease-in-out;
   animation: pulse 4s infinite;
 }
 
 #slideButton:hover {
-  background-color: #0db6674d;
-  border-color: #4bd40e;
-  border-bottom: 3px solid #0db667; /* Línea debajo del enlace */
+  border-top: 1px solid #0db667;
+  border-left: 1px solid #0db667;
 }
 
-#slideButton:active {
+/* #slideButton:active {
   background-color: #0000007f;
   border-color: #4bd40e;
-}
+} */
 
 @keyframes pulse {
   0% {
@@ -124,7 +130,7 @@ body {
 
 /* Estilos para la imagen */
 .imagen img {
-  width: 80%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   transition: transform 0.8s ease; /* Transición suave para el balanceo */
   transform-origin: top center; /* Establece el punto de rotación en la parte supeior */
@@ -132,7 +138,9 @@ body {
 
 /* Efecto hover: balancea la imagen */
 .imagen img:hover {
-  transform: rotate(20deg); /* Rota la imagen 10 grados para crear el balanceo */
+  transform: rotate(
+    15deg
+  ); /* Rota la imagen 10 grados para crear el balanceo */
 }
 
 /* Contenedor de encabezados h2*/
@@ -142,25 +150,25 @@ body {
   flex-direction: column;
   justify-content: center; /* Centra el texto verticalmente */
   padding: 50px;
-  
+
   color: white;
- margin-top: 50px;
- z-index: 999;
+  margin-top: 50px;
+  z-index: 999;
 }
 
 /* Estilos para el H2 */
 .container-encabezados h2 {
-  font-size: 6.8vh;
-  color: #4caf50;
+  font-size: 9.1vh;
+  color: #0eee15;
   font-weight: bold; /* Resalta el H2 */
 }
 
 /* Estilos para el H3 */
 .container-encabezados h3 {
-  font-size: 3.5vh;
-  color: #ffffff; 
+  font-size: 4.1vh;
+  color: #ffffff;
   font-style: italic; /* Añade un toque de elegancia */
-  letter-spacing: 1px; /* Espaciado entre letras para más claridad */
+  letter-spacing: 1.5px; /* Espaciado entre letras para más claridad */
   word-spacing: 5px; /* Añade más espacio entre las palabras */
   padding: 0.5vh 0; /* Espaciado para mejor legibilidad */
 }
@@ -183,8 +191,8 @@ body {
 
 /* Estilo del encabezado */
 .icon-container h2 {
-  font-size: 6.8vh;
-  color: #4caf50;
+  font-size: 9.1vh;
+  color: #0eee15;
   font-weight: bold; /* Resalta el H2 */
   text-align: center;
   margin-bottom: 5vh;
@@ -212,7 +220,6 @@ body {
 .icon {
   width: 15vh;
   height: auto;
-  
 }
 
 /* Estilos de los nombres de los íconos */
@@ -220,18 +227,79 @@ body {
   font-size: 2.5vh;
   color: #fffefe;
   margin-top: 1vh;
-  
 }
 
 /* Efectos de hover en los íconos */
 .icon-item:hover .icon {
   transform: scale(1.1); /* Aumenta el tamaño del ícono */
-  filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.3)); /* Sombra más pronunciada */
+  filter: drop-shadow(
+    0px 8px 12px rgba(0, 0, 0, 0.3)
+  ); /* Sombra más pronunciada */
 }
-
 
 .icon-item:hover {
   transform: translateY(-30px); /* Mueve el contenedor del ícono hacia arriba */
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Añade sombra adicional */
-  
+}
+
+
+/*
+*image-container-scrum;
+*/
+
+.image-container-scrum {
+  display: flex;
+  width: 100%;
+  height: 80vh; /* Altura completa de la pantalla */
+}
+
+/* Contenedor de la imagen */
+.imagen-scrum {
+  flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  z-index: 999;
+  padding-top: 80px;
+}
+
+/* Estilos para la imagen */
+.imagen-scrum img {
+  width: 90%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 2s ease; /* Transición suave */
+  transform-origin: center; /* Establece el punto de rotación en la parte supeior */
+}
+
+/* Efecto hover: balancea la imagen */
+.imagen-scrum img:hover {
+  transform: rotate(
+    -360deg
+  ); /* Rota la imagen 10 grados para crear el balanceo */
+}
+
+
+/*
+*container-jmeter;
+*/
+
+.container-jmeter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25vh;
+  height: 80vh;
+  width: 95vw;
+ 
+}
+
+.container-encabezados-jmeter {
+  font-size: 4.1vh;
+  color: #ffffff;
+  font-style: italic; /* Añade un toque de elegancia */
+  letter-spacing: 1.5px; /* Espaciado entre letras para más claridad */
+  word-spacing: 5px; /* Añade más espacio entre las palabras */
+  padding: 8vh 30vh; /* Espaciado para mejor legibilidad */
+  text-align: center;
 }
