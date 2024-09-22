@@ -1,0 +1,90 @@
+/* Contenedor principal que ocupa toda la pantalla */
+.container-form {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 80vh;
+    width: 95vw;
+  }
+  
+  .mensaje-izquierda {
+    width: 50%; /* La mitad izquierda para el texto */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar el texto verticalmente */
+    align-items: center; /* Centrar el texto horizontalmente */
+    height: 100%; /* Asegurar que ocupe todo el alto disponible */
+    padding: 0 5vw; /* Añadir padding lateral para legibilidad */
+    box-sizing: border-box; /* Incluir el padding en el cálculo del ancho */
+}
+
+/* Estilo para el h2 */
+.mensaje-izquierda h2 {
+    font-size: 8.1vh; /* Reducir un poco el tamaño de la fuente */
+    color: #0eee15;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Estilo para los h3 */
+.mensaje-izquierda h3 {
+    font-size: 4.1vh;
+    color: #ffffff;
+    font-style: italic; /* Añade un toque de elegancia */
+    letter-spacing: 1.5px; /* Espaciado entre letras para más claridad */
+    word-spacing: 5px; /* Añade más espacio entre las palabras */
+    padding: 0.5vh 0; /* Espaciado para mejor legibilidad */
+}
+
+
+  /* Estilo para el lado derecho (formulario) */
+  .formulario {
+    width: 50%; /* La mitad derecha para el formulario */
+    padding: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar el formulario verticalmente */
+    color: white;
+    position: relative;
+    z-index: 999;
+  }
+  
+  /* Estilos para los campos del formulario */
+  .campo {
+    margin-bottom: 20px;
+  }
+  
+  .campo__label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .campo__field {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    background-color: #333333;
+    color: white;
+  }
+  
+  /* Estilos específicos para el campo de texto */
+  .campo__field--textarea {
+    min-height: 100px;
+  }
+  
+  /* Estilos para los botones */
+  .boton {
+    background-color: #666666;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .boton:hover {
+    background-color: #555555;
+  }
+  
