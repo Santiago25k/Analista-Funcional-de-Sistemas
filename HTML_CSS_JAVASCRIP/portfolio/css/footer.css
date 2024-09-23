@@ -1,0 +1,44 @@
+/* Estilo del contenedor del footer */
+.container-footer {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000000b1;
+    z-index: 999;
+  }
+  
+  .container-footer ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    justify-content: center; /* Centra los íconos y el texto */
+  }
+  
+  .container-footer li {
+    margin: 20px;
+    font-size: 4vh;
+    padding: 1vh;
+  }
+  
+  .container-footer a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .icon-footer {
+    width: 20vh; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+  }
+  
+  /* Ajusta el contenedor del texto del enlace */
+.container-footer li:last-child {
+    margin-left: auto; /* Empuja el texto a la derecha */
+    text-align: right; /* Alinea el texto a la derecha */
+    padding: 5.8vh;
+}
