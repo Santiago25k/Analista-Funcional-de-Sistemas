@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #00000056;
+  background-color: #000000b1;
   width: 100%;
   padding: 1.5vh 3vh;
   position: fixed;
@@ -41,7 +41,6 @@
 }
 
 .nav-links a:hover {
-  
   
   border-bottom: 3px solid #0db667; /* Línea debajo del enlace */
 }
