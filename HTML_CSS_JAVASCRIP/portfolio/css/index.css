@@ -69,7 +69,7 @@ body {
 }
 
 /*
- *Estilos para el boton;
+ * Estilos para el botón;
 */
 
 #slideButton {
@@ -77,23 +77,21 @@ body {
   margin: 5vh auto;
   padding: 10px 20px;
   letter-spacing: 2px; /* Espaciado de letras para darle aire */
-  background-color: #0000001f;
-  /* border-radius: 30px; */
+  background-color: #201e1e1f;
+  border: 1px solid #0eee15; /* Borde de 1px color verde */
+  border-radius: 30px;
   cursor: pointer;
   color: white;
-  transition: background-color 0.8s ease-in-out;
+  transition: background-color 0.8s ease-in-out, border-color 0.3s;
   animation: pulse 4s infinite;
 }
 
 #slideButton:hover {
-  border-top: 1px solid #0db667;
-  border-left: 1px solid #0db667;
+  background-color: rgba(14, 238, 21, 0.2); /* Verde claro casi transparente */
+  border-color: #0eee15; /* Mantiene el borde verde al hacer hover */
 }
 
-/* #slideButton:active {
-  background-color: #0000007f;
-  border-color: #4bd40e;
-} */
+
 
 @keyframes pulse {
   0% {
@@ -184,8 +182,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 60vh;
   padding: 6vh 0;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 8px 20px rgba(250, 3, 3, 0.89); */
   z-index: 999;
 }
 
@@ -233,13 +232,13 @@ body {
 .icon-item:hover .icon {
   transform: scale(1.1); /* Aumenta el tamaño del ícono */
   filter: drop-shadow(
-    0px 8px 12px rgba(0, 0, 0, 0.3)
+    0px 8px 12px rgb(32, 156, 30)
   ); /* Sombra más pronunciada */
 }
 
 .icon-item:hover {
   transform: translateY(-30px); /* Mueve el contenedor del ícono hacia arriba */
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2); /* Añade sombra adicional */
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.347); /* Añade sombra adicional */
 }
 
 
@@ -250,7 +249,8 @@ body {
 .image-container-scrum {
   display: flex;
   width: 100%;
-  height: 80vh; /* Altura completa de la pantalla */
+  height: 90vh; 
+  
 }
 
 /* Contenedor de la imagen */
@@ -283,7 +283,7 @@ body {
 *container-jmeter;
 */
 
-.container-jmeter {
+/* .container-jmeter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -292,14 +292,16 @@ body {
   height: 80vh;
   width: 95vw;
  
-}
+} */
 
-.container-encabezados-jmeter {
+/* .container-encabezados-jmeter {
   font-size: 4.1vh;
   color: #ffffff;
-  font-style: italic; /* Añade un toque de elegancia */
-  letter-spacing: 1.5px; /* Espaciado entre letras para más claridad */
-  word-spacing: 5px; /* Añade más espacio entre las palabras */
-  padding: 8vh 30vh; /* Espaciado para mejor legibilidad */
+  font-style: italic; 
+  letter-spacing: 1.5px; 
+  word-spacing: 5px; 
+  padding: 8vh 30vh; 
   text-align: center;
-}
+} */
+
+
