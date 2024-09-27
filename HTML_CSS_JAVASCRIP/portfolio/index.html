@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tester QA</title>
+    <link rel="stylesheet" href="./css/spacestars.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/animation.css" />
-    <link rel="stylesheet" href="./css/spacestars.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/footer.css" />
@@ -30,7 +30,12 @@
           <!-- ENCABEZADO H1 -->
           <h1>Testing | QA</h1>
         </div>
-        <ul class="nav-links">
+        <div class="hamburger" id="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
           <li><a href="#top">Inicio</a></li>
           <li><a href="#nosotros">GitHub</a></li>
           <li><a href="#servicios">Linkedin</a></li>
@@ -76,8 +81,8 @@
           El aseguramiento de un buen producto no es solo una fase, sino un
           compromiso constante.
           <br /><br />
-          Mi pasión por el testing me permite identificar problemas antes de que
-          afecten a los usuarios 🛠️, garantizando la máxima experiencia en cada
+          Mi pasión por el testing me permite identificar problemas 🛠️ antes de que
+          afecten a los usuarios, garantizando la máxima experiencia en cada
           entrega.⭐
           <br /><br />
           <!-- Si quieres saber más sobre testing, <a href="http://#">¡Haz click!</a> -->
@@ -228,7 +233,9 @@
       </ul>
     </div>
     <!-- Scripts -->
-     <script src="./js/api_formulario.js"></script>
-    <script src="./js/spacestars.js"></script>
+    <!-- <script src="./js/spacestarsV1.js"></script> -->
+    <script src="./js/spacestarsV2.js" defer></script>
+    <script src="./js/api_formulario.js"></script>
+    <script src="./js/navbar_responsive.js"></script>
   </body>
 </html>
