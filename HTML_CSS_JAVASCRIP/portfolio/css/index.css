@@ -10,18 +10,12 @@ body {
 
 .containerPrincipal {
   text-align: center;
-  height: 55vh; /* Asegura que ocupe toda la altura de la vista */
+  height: 48vh; /* Asegura que ocupe toda la altura de la vista */
   width: 100%;
   padding-top: 22vh; /* Ajusta el espaciado superior */
   padding-bottom: 20vh;
   z-index: 999; /* Asegúrate de que esté por encima de todos los elementos */
   position: relative; /* Asegura que el z-index funcione correctamente */
-}
-
-.containerPrincipal p {
-  font-size: 15.5vh;
-
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
 }
 
 .containerPrincipal h2 {
@@ -34,7 +28,6 @@ body {
 .containerPrincipal h3 {
   font-size: 5vh;
   font-style: italic;
-  padding-bottom: 5vh;
   font-weight: bold;
 }
 
@@ -42,10 +35,10 @@ body {
  *Animacion del parrafo; 
 */
 
-.cssanimation {
+/* .cssanimation {
   animation-duration: 4s;
   animation-fill-mode: both;
-  display: inline-block; /* Esto permite que el texto se centre */
+  display: inline-block; 
 }
 
 .cssanimation span {
@@ -53,7 +46,7 @@ body {
 }
 
 .open {
-  width: auto; /* Elimina el ancho fijo */
+  width: auto; 
   margin: 0 auto;
   overflow: hidden;
   animation-name: open;
@@ -64,13 +57,17 @@ body {
     width: 0;
   }
   to {
-    width: 100%; /* Asegura que crezca según el contenido */
+    width: 100%; 
   }
-}
+} */
 
 /*
  * Estilos para el botón;
 */
+
+a {
+  text-decoration: none !important; /* Elimina el subrayado de los enlaces */
+}
 
 #slideButton {
   display: block;
@@ -84,14 +81,13 @@ body {
   color: white;
   transition: background-color 0.8s ease-in-out, border-color 0.3s;
   animation: pulse 4s infinite;
+  box-shadow: 0px 4px 15px rgba(3, 250, 19, 0.89);
 }
 
 #slideButton:hover {
   background-color: rgba(14, 238, 21, 0.2); /* Verde claro casi transparente */
   border-color: #0eee15; /* Mantiene el borde verde al hacer hover */
 }
-
-
 
 @keyframes pulse {
   0% {
@@ -150,7 +146,7 @@ body {
   padding: 50px;
 
   color: white;
-  margin-top: 50px;
+  
   z-index: 999;
 }
 
@@ -183,6 +179,7 @@ body {
   align-items: center;
   width: 100%;
   height: 60vh;
+  margin-top: 50px;
   padding: 6vh 0;
   /* box-shadow: 0px 8px 20px rgba(250, 3, 3, 0.89); */
   z-index: 999;
@@ -241,7 +238,6 @@ body {
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.347); /* Añade sombra adicional */
 }
 
-
 /*
 *image-container-scrum;
 */
@@ -249,8 +245,7 @@ body {
 .image-container-scrum {
   display: flex;
   width: 100%;
-  height: 90vh; 
-  
+  height: 90vh;
 }
 
 /* Contenedor de la imagen */
@@ -278,30 +273,113 @@ body {
   ); /* Rota la imagen 10 grados para crear el balanceo */
 }
 
+/* *QUERYS*/
 
-/*
-*container-jmeter;
-*/
+/* Media Queries para mejorar la responsividad */
 
-/* .container-jmeter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 25vh;
-  height: 80vh;
-  width: 95vw;
+@media (max-width: 768px) {
+  
+  .mas-informacion{
+    margin-bottom: 80px;
+  }
+  
+  .containerPrincipal {
+    padding-top: 45%;
+    padding-bottom: 50%;
+  }
+
+  .containerPrincipal h2 {
+    font-size: 5.5vh;
+  }
+
+  .containerPrincipal h3 {
+    font-size: 3vh;
+  }
+  #slideButton {
+    box-shadow: 0px 8px 20px rgba(3, 250, 19, 0.89);
+  }
+
+  /* .container-encabezados {
+    margin-top: 20%; 
+  } */
+
+  .container-encabezados h2 {
+    font-size: 5.5vh;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .container-encabezados h3 {
+    font-size: 3vh;
+    text-align: center;
+    font-style: italic;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .icon-container h2 {
+    font-size: 6vh;
+  }
+
+  .icon-name {
+    font-size: 1.8vh;
+  }
+  .image-container-scrum {
+    /* display: none;  */
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+/* Ocultar en dispositivos móviles por defecto */
+.mobile-only {
+  display: none;
+}
+
+/* Ocultar en pantallas grandes por defecto */
+.desktop-only {
+  display: block;
+}
+
+/* *QUERYS PARA OCULTAR */
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+
+  .image-container {
+    /* display: none; */
+    height: auto;
+    
+  }
+  .container-encabezados {
+    /* display: none; */
+    /* margin-top: 0; */
+    padding: 0;
+    display: block;
+  }
  
-} */
-
-/* .container-encabezados-jmeter {
-  font-size: 4.1vh;
-  color: #ffffff;
-  font-style: italic; 
-  letter-spacing: 1.5px; 
-  word-spacing: 5px; 
-  padding: 8vh 30vh; 
-  text-align: center;
-} */
-
-
+  .imagen-scrum {
+    display: none;
+  }
+  .icon-container {
+    /* display: none;  */
+    height: auto;
+  }
+  .icon-container h2 {
+    font-size: 5.5vh;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .icon{
+    width: 14vh;
+  }
+  .imagen {
+    display: none;
+  }
+}
