@@ -11,17 +11,13 @@ formulario.addEventListener('submit', function(event) {
     const mensaje = document.getElementById('mensaje').value;
 
     // Crear objeto con los datos del formulario
-    const datos = {
-        nombre: nombre,
-        email: email,
-        mensaje: mensaje
-    };
+    const datos = { nombre, email, mensaje };
 
     // Enviar datos a la API de envío de correo electrónico (a través de una solicitud POST)
     fetch('https://formspree.io/f/myyrovnz', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify(datos),
     })

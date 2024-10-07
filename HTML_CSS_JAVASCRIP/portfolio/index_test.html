@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Tester QA</title>
     <link rel="stylesheet" href="./css/spacestars.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/index_test.css" />
     <link rel="stylesheet" href="./css/animation.css" />
     <link rel="stylesheet" href="./css/navbar.css" />
-    <link rel="stylesheet" href="./css/form.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/form_test.css" />
+    <link rel="stylesheet" href="./css/footer_test.css" />
   </head>
   <body>
     <div id="top"></div>
@@ -32,11 +32,11 @@
         <img src="./img/ufo1.png" alt="Nave espacial" />
       </div>
       <!-- <div class="rocket"></div>
-        <img src="./img/rocket1.png" alt="rocket" />
-      </div>
-      <div class="rocket-man"></div>
-        <img src="./img/rocket-man1.png" alt="rocket man" />
-      </div> -->
+          <img src="./img/rocket1.png" alt="rocket" />
+        </div>
+        <div class="rocket-man"></div>
+          <img src="./img/rocket-man1.png" alt="rocket man" />
+        </div> -->
     </div>
 
     <!-- Barra de navegacion -->
@@ -84,7 +84,7 @@
     <div class="mas-informacion" id="mas-informacion"></div>
 
     <!-- Quality Assurance Container -->
-    <div class="quality-assurance-container">
+    <div class="quality-assurance-container" id="quality-assurance-container">
       <div class="headers-container">
         <h2 class="desktop-only">Pilar fundamental del desarrollo</h2>
         <h2 class="mobile-only">Aseguramiento de calidad</h2>
@@ -108,7 +108,7 @@
     <!-- Contenedor de tecnologías y herramientas -->
     <div class="tech-tools-container">
       <h2>Tecnologías, herramientas y lenguajes de programación</h2>
-      <div class="icon-row">
+      <div class="icons-row">
         <div class="icon-item">
           <img
             src="./img/html-5icon.png"
@@ -176,10 +176,10 @@
     </div>
     <!-- Fin Contenedor de tecnologías y herramientas -->
 
-    <!-- scrum-container-->
-    <div class="scrum-container">
-      <div class="imagen-scrum">
-        <img src="./img/scrum.png" alt="scrum" />
+    <!-- Contenedor de Scrum -->
+    <div class="scrum-container" id="scrum-container">
+      <div class="image-scrum">
+        <img src="./img/scrum.png" alt="Scrum" />
       </div>
       <div class="headers-container">
         <h2 class="desktop-only">Metodología SCRUM</h2>
@@ -191,69 +191,71 @@
           Mi enfoque en Scrum permite a los equipos colaborar de manera
           efectiva, adaptarse a cambios y entregar valor de manera incremental
           📈, asegurando que cada fase del proyecto sea eficiente y
-          satisfactoria✅
+          satisfactoria ✅.
         </h3>
       </div>
     </div>
-    <!-- Fin scrum-container -->
+    <!-- Fin Contenedor de Scrum -->
 
+    
     <div id="contacto"></div>
+    
     <!-- form-container-->
     <div class="form-container">
-      <div class="contact-message">
-        <h2>Formulario de contacto</h2>
-        <h3>
-          Completa el formulario con tus datos y me pondré en contacto contigo
-          para discutir cómo puedo contribuir a la calidad de tu proyecto💻
-          <br /><br />
-          Estoy listo para ofrecer soluciones🚀
-        </h3>
+        <div class="contact-message">
+          <h2>Formulario de contacto</h2>
+          <h3>
+            Completa el formulario con tus datos y me pondré en contacto contigo
+            para discutir cómo puedo contribuir a la calidad de tu proyecto💻
+            <br /><br />
+            Estoy listo para ofrecer soluciones🚀
+          </h3>
+        </div>
+      
+        <form
+          class="formulario"
+          id="formulario"
+          action="https://formspree.io/f/myyrovnz"
+          method="POST"
+        >
+          <div class="campo">
+            <label class="campo_label" for="nombre">Nombre</label>
+            <input
+              class="campo_field"
+              type="text"
+              placeholder="Juan Carlos"
+              id="nombre"
+            />
+          </div>
+      
+          <div class="campo">
+            <label class="campo_label" for="email">e-Mail</label>
+            <input
+              class="campo_field"
+              type="email"
+              placeholder="holajuancarlos@gmail.com"
+              id="email"
+            />
+          </div>
+      
+          <div class="campo">
+            <label class="campo_label" for="mensaje">Mensaje</label>
+            <textarea
+              class="campo_field campo_field--textarea"
+              placeholder="¿Cómo estás?"
+              id="mensaje"
+            ></textarea>
+          </div>
+      
+          <div class="campo">
+            <input type="submit" value="ENVIAR MENSAJE" id="slideButton" />
+          </div>
+        </form>
       </div>
-
-      <form
-        class="formulario"
-        id="formulario"
-        action="https://formspree.io/f/myyrovnz"
-        method="POST"
-      >
-        <div class="campo">
-          <label class="campo__label" for="nombre">Nombre</label>
-          <input
-            class="campo__field"
-            type="text"
-            placeholder="Juan Carlos"
-            id="nombre"
-          />
-        </div>
-
-        <div class="campo">
-          <label class="campo__label" for="email">e-Mail</label>
-          <input
-            class="campo__field"
-            type="email"
-            placeholder="holajuancarlos@gmail.com"
-            id="email"
-          />
-        </div>
-
-        <div class="campo">
-          <label class="campo__label" for="mensaje">Mensaje</label>
-          <textarea
-            class="campo__field campo__field--textarea"
-            placeholder="¿Cómo estás?"
-            id="mensaje"
-          ></textarea>
-        </div>
-
-        <div class="campo">
-          <input type="submit" value="ENVIAR MENSAJE" id="slideButton" />
-        </div>
-      </form>
-    </div>
     <!-- Fin form-container -->
 
-    <!-- footer-container -->
-    <div class="footer-container">
+    <!-- Contenedor de Footer-->
+    <div class="container-footer">
       <ul class="social-icons">
         <li>
           <img src="./img/jmeter3.png" alt="JMeter Icon" class="icon-footer" />
@@ -267,6 +269,7 @@
         <li>
           <a
             href="https://github.com/Santiago25k/Analista-Funcional-de-Sistemas/tree/main/HTML_CSS_JAVASCRIP/portfolio"
+            aria-label="Obtener este código OpenSource"
           >
             <span class="desktop-only"
               >👉 Obtener este código | OpenSource 👈</span
@@ -276,9 +279,10 @@
         </li>
       </ul>
     </div>
-    <!-- Fin footer-container -->
+    <!-- Fin Contenedor Footer -->
 
     <!-- Scripts -->
+    <!-- <script src="./js/spacestarsV1.js"></script> -->
     <script src="./js/spacestarsV2.js" defer></script>
     <script src="./js/api_formulario.js"></script>
     <script src="./js/navbar_responsive.js"></script>

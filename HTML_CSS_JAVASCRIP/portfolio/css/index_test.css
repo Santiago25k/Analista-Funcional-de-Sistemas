@@ -4,6 +4,7 @@ body {
   margin: 0;
   color: white;
 }
+
 /* 
    *Landing Container; 
 */
@@ -30,8 +31,8 @@ body {
 }
 
 /*
- * Estilos para el botón;
-*/
+   * Estilos para el botón;
+  */
 
 a {
   text-decoration: none !important; /* Elimina el subrayado de los enlaces */
@@ -73,71 +74,71 @@ a {
    *quality-assurance-container; 
   */
 
-  .quality-assurance-container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .imagen {
-    flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
-    display: flex;
-    justify-content: center; /* Centra la imagen horizontalmente */
-    align-items: center; /* Centra la imagen verticalmente */
-    z-index: 999;
-    padding-top: 80px;
-  }
-  
-  /* Estilos para la imagen */
-  .imagen img {
-    width: 95%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
-    height: auto; /* Mantiene la proporción de la imagen */
-    transition: transform 0.8s ease; /* Transición suave para el balanceo */
-    transform-origin: top center; /* Establece el punto de rotación en la parte superior */
-  }
-  
-  /* Efecto hover: balancea la imagen */
-  .imagen img:hover {
-    transform: rotate(
-      15deg
-    ); /* Rota la imagen 10 grados para crear el balanceo */
-  }
-  
-  /* Contenedor de encabezados h2 */
-  .headers-container {
-    flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Centra el texto verticalmente */
-    padding: 50px;
-  
-    color: white;
-  
-    z-index: 999;
-  }
-  
-  /* Estilos para el H2 */
-  .headers-container h2 {
-    font-size: 9.1vh;
-    color: #0eee15;
-    font-weight: bold; /* Resalta el H2 */
-  }
-  
-  /* Estilos para el H3 */
-  .headers-container h3 {
-    font-size: 4.1vh;
-    color: #ffffff;
-    font-style: italic; /* Añade un toque de elegancia */
-    letter-spacing: 1.5px; /* Espaciado entre letras para más claridad */
-    word-spacing: 5px; /* Añade más espacio entre las palabras */
-    padding: 0.5vh 0; /* Espaciado para mejor legibilidad */
-  }
+.quality-assurance-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; /* Altura completa de la pantalla */
+}
 
-/*
- *tech-tools-container; 
+.imagen {
+  flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+  display: flex;
+  justify-content: center; /* Centra la imagen horizontalmente */
+  align-items: center; /* Centra la imagen verticalmente */
+  z-index: 999;
+  padding-top: 80px;
+}
+
+/* Estilos para la imagen */
+.imagen img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  transition: transform 0.8s ease; /* Transición suave para el balanceo */
+  transform-origin: top center; /* Establece el punto de rotación en la parte superior */
+}
+
+/* Efecto hover: balancea la imagen */
+.imagen img:hover {
+  transform: rotate(
+    15deg
+  ); /* Rota la imagen 10 grados para crear el balanceo */
+}
+
+/* Contenedor de encabezados h2 */
+.headers-container {
+  flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra el texto verticalmente */
+  padding: 50px;
+
+  color: white;
+
+  z-index: 999;
+}
+
+/* Estilos para el H2 */
+.headers-container h2 {
+  font-size: 9.1vh;
+  color: #0eee15;
+  font-weight: bold; /* Resalta el H2 */
+}
+
+/* Estilos para el H3 */
+.headers-container h3 {
+  font-size: 4.1vh;
+  color: #ffffff;
+  font-style: italic; /* Añade un toque de elegancia */
+  letter-spacing: 1.5px; /* Espaciado entre letras para más claridad */
+  word-spacing: 5px; /* Añade más espacio entre las palabras */
+  padding: 0.5vh 0; /* Espaciado para mejor legibilidad */
+}
+
+/* 
+*tech-tools-container
 */
 
-/* Contenedor principal */
+/* Contenedor principal de tecnologías y herramientas */
 .tech-tools-container {
   display: flex;
   flex-direction: column;
@@ -147,7 +148,6 @@ a {
   height: 60vh;
   margin-top: 50px;
   padding: 6vh 0;
-  /* box-shadow: 0px 8px 20px rgba(250, 3, 3, 0.89); */
   z-index: 999;
 }
 
@@ -155,14 +155,14 @@ a {
 .tech-tools-container h2 {
   font-size: 9.1vh;
   color: #0eee15;
-  font-weight: bold; /* Resalta el H2 */
+  font-weight: bold; /* Resalta el encabezado */
   text-align: center;
   margin-bottom: 5vh;
   z-index: 999;
 }
 
 /* Fila de íconos */
-.icon-row {
+.icons-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,17 +205,18 @@ a {
 }
 
 /*
-*scrum-container;
-*/
+  *scrum-container;
+  */
 
+/* Contenedor principal de Scrum */
 .scrum-container {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
 }
 
 /* Contenedor de la imagen */
-.imagen-scrum {
+.image-scrum {
   flex: 1; /* Ocupa el 50% del ancho del contenedor principal */
   display: flex;
   justify-content: center; /* Centra la imagen horizontalmente */
@@ -225,30 +226,38 @@ a {
 }
 
 /* Estilos para la imagen */
-.imagen-scrum img {
+.image-scrum img {
   width: 90%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
   height: auto; /* Mantiene la proporción de la imagen */
   transition: transform 2s ease; /* Transición suave */
-  transform-origin: center; /* Establece el punto de rotación en la parte supeior */
+  transform-origin: center; /* Establece el punto de rotación en el centro */
 }
 
 /* Efecto hover: balancea la imagen */
-.imagen-scrum img:hover {
+.image-scrum img:hover {
   transform: rotate(
     -360deg
-  ); /* Rota la imagen 10 grados para crear el balanceo */
+  ); /* Rota la imagen 360 grados para crear el balanceo */
 }
+
+/* Ocultar en dispositivos móviles por defecto */
+.mobile-only {
+    display: none;
+  }
+  
+  /* Ocultar en pantallas grandes por defecto */
+  .desktop-only {
+    display: block;
+  }
+
 
 /* *QUERYS*/
 
-/* Media Queries para mejorar la responsividad */
-
 @media (max-width: 768px) {
-  
-  .mas-informacion{
+  .mas-informacion {
     margin-bottom: 80px;
   }
-  
+
   .landing-container {
     padding-top: 45%;
     padding-bottom: 50%;
@@ -261,16 +270,8 @@ a {
   .landing-container h3 {
     font-size: 3vh;
   }
-
   #slideButton {
     box-shadow: 0px 8px 20px rgba(3, 250, 19, 0.89);
-  }
-
-  .headers-container {
-    /* display: none; */
-    /* margin-top: 0; */
-    padding: 0;
-    display: block;
   }
 
   .headers-container h2 {
@@ -295,8 +296,8 @@ a {
   .icon-name {
     font-size: 1.8vh;
   }
-  .scrum-container{
-    /* display: none;  */
+
+  .image-scrum {
     height: auto;
     margin-bottom: 50px;
   }
@@ -312,32 +313,9 @@ a {
   display: block;
 }
 
-/* *QUERYS PARA OCULTAR */
-@media (max-width: 768px) {
+/* *QUERYS para pantallas grandes */
+@media (min-width: 769px) {
   .mobile-only {
-    display: block;
-  }
-  .desktop-only {
-    display: none;
-  }
-
-  .imagen-scrum {
-    display: none;
-  }
-  .tech-tools-container {
-    /* display: none;  */
-    height: auto;
-  }
-  .tech-tools-container h2 {
-    font-size: 5.5vh;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .icon{
-    width: 14vh;
-  }
-  .imagen {
     display: none;
   }
 }
