@@ -241,7 +241,7 @@ a {
 
 /* *QUERYS*/
 
-/* Media Queries para mejorar la responsividad */
+/* Media Queries para mejorar la responsividad en dispositivos mobiles */
 
 @media (max-width: 768px) {
   
@@ -273,6 +273,11 @@ a {
     display: block;
   }
 
+  .tech-tools-container {
+    /* display: none;  */
+    height: auto;
+  }
+
   .headers-container h2 {
     font-size: 5.5vh;
     text-align: center;
@@ -289,7 +294,14 @@ a {
   }
 
   .tech-tools-container h2 {
-    font-size: 6vh;
+    font-size: 5.5vh;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .icon{
+    width: 14vh;
   }
 
   .icon-name {
@@ -324,19 +336,7 @@ a {
   .imagen-scrum {
     display: none;
   }
-  .tech-tools-container {
-    /* display: none;  */
-    height: auto;
-  }
-  .tech-tools-container h2 {
-    font-size: 5.5vh;
-    text-align: center;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .icon{
-    width: 14vh;
-  }
+
   .imagen {
     display: none;
   }
