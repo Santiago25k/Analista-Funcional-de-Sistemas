@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testerqa</title>
+    <link rel="stylesheet" href="../css/spacestars.css">
+    <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="./testerqa.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+     <!-- Fondo estrellado -->
+     <div class="container">
+        <div class="space space-1"></div>
+        <div class="space space-2"></div>
+        <div class="space space-3"></div>
+        <div class="meteor"></div>
+      </div>
+  
+      <!-- UFO & ROCKET-ALIEN & ROCKETS -->
+      <div class="scene">
+        <div class="spaceship">
+          <img src="../img/rocket-alien.png" alt="Nave espacial" />
+        </div>
+        <div class="ufo">
+          <img src="../img/ufo1.png" alt="Nave espacial" />
+        </div>
+        <!-- <div class="rocket"></div>
+          <img src="./img/rocket1.png" alt="rocket" />
+        </div>
+        <div class="rocket-man"></div>
+          <img src="./img/rocket-man1.png" alt="rocket man" />
+        </div> -->
+      </div>
+  
+      <!-- Barra de navegacion -->
+      <header>
+        <nav class="navbar">
+          <div class="logo">
+            <h1>Tester | QA</h1>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="https://setesterqa.netlify.app/">Inicio</a></li>
+            <li><a href="https://github.com/Santiago25k">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/santiago-ercoles-b40b29331/">Linkedin</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <div class="contenedor">
+        <h1>Este sitio se está desarrollando</h1>
+        <p>Se actualizará en:</p>
+        <div class="cronometro" id="cronometro">
+            <span id="dias"></span> días, 
+            <span id="horas"></span> horas, 
+            <span id="minutos"></span> minutos, 
+            <span id="segundos"></span> segundos.
+        </div>
+    </div>
+
+    <script src="../js/analytics.js"></script>
+    <script src="../js/navbar_responsive.js"></script>
+    <script src="../js/spacestarsV2.js"></script>
+    <script src="./js/cronometro.js"></script>
+</body>
+</html>
