@@ -36,6 +36,34 @@ ej_9
 //!Cálculo de Potencia
 //Escribe un programa que pida al usuario que ingrese una base y un exponente. Luego, calcula y muestra el resultado de elevar la base al exponente.
 
+ej_10
+//! Suma de Pares e Impares
+// Escribe un programa que pida al usuario que ingrese 10 números. Luego, calcula y muestra la suma de los números pares y la suma de los números impares por separado.
+
+ej_11
+//! Producto de Elementos en un Arreglo
+// Crea un programa que solicite al usuario que ingrese 5 números y luego calcule y muestre el producto de esos números.
+
+ej_12
+//! Número más Pequeño
+// Desarrolla un programa que le pida al usuario que ingrese 10 números enteros y luego determine y muestre cuál es el menor de ellos.
+
+ej_13
+//! Convertir Grados Celsius a Fahrenheit
+// Escribe un programa que solicite al usuario que ingrese una temperatura en grados Celsius y luego la convierta a grados Fahrenheit.
+
+ej_14
+//! Verificar si un Número es Primo
+// Desarrolla un programa que le pida al usuario que ingrese un número entero y determine si ese número es primo o no.
+
+ej_15
+//! Número más Pequeño
+// Desarrolla un programa que le pida al usuario que ingrese 10 números enteros y luego determine y muestre cuál es el menor de ellos.
+
+ej_16
+//! Horas trabajadas por analistas
+// Crea un programa en donde se ingresen 10 analistas e indique como salida las horas trabajadas de los analistas si son menor que 8 o mayor.
+
 ej_ex1
 //! parcial 1
 
