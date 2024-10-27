@@ -1,0 +1,381 @@
+@import url("../../css/index.css");
+@import url("../../css/spacestars.css");
+@import url("../../css/animation.css");
+@import url("../../css/navbar.css");
+@import url("../../css/form.css");
+
+:root {
+  /* Colores globales */
+  --color-white: white;
+  --color-almost-white: #fffefe;
+  --color-green: #0eee15;
+  --color-black: #000000fa;
+  --color-dark-gray: #201e1e1f;
+  --color-light-green: rgba(14, 238, 21, 0.2);
+  --color-green-shadow: rgba(3, 250, 19, 0.89);
+  --color-black-shadow: rgba(0, 0, 0, 0.347);
+
+  /* Tamaños de fuente */
+  --font-size-h2-small: 4.1vh;
+  --font-size-h2-medium: 7.1vh;
+  --font-size-h2-large: 9.1vh;
+  --font-size-h2-xlarge: 10vh;
+
+  --font-size-h3-medium: 4.1vh;
+  --font-size-h3-large: 5vh;
+  --font-size-icon-name: 2.5vh;
+
+  /* Tamaños para móviles */
+  --font-size-h2-mobile: 5.5vh;
+  --font-size-h3-mobile: 3vh;
+  --font-size-icon-name-mobile: 1.8vh;
+}
+
+body {
+  background-color: rgb(7, 9, 49);
+  color: white;
+}
+
+/* Botón para volver arriba */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  display: none;
+  background-color: black;
+  color: #28a745;
+  border: 3px solid #28a745;
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 30px;
+  z-index: 1000;
+  text-align: center;
+  line-height: 0.6;
+}
+
+#scrollToTopBtn:hover {
+  background-color: black;
+  color: #218838;
+  border-color: #218838;
+}
+
+.modulo {
+  height: 90px;
+}
+
+/* Contenedor principal */
+.test-container {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.test-container h2 {
+  font-size: var(--font-size-h2-large);
+  text-align: center;
+  color: var(--color-white);
+}
+
+/* Estilos para títulos */
+.landing-container h3 {
+  text-align: center;
+  font-size: var(--font-size-h3-large);
+  color: white;
+  font-style: italic;
+}
+
+/* Contenido general */
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  padding-left: 40px;
+}
+
+.content ul {
+  width: 50%;
+  cursor: pointer;
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(3, 250, 19, 0.89);
+}
+
+.content li {
+  font-size: var(--font-size-h3-medium);
+  margin: 10px;
+  z-index: 999;
+}
+
+/* Estilos para imagen de escritorio */
+.imagen-escritorio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  margin-right: 50px;
+  padding-top: 0;
+}
+
+.imagen-escritorio img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.8s ease;
+  transform-origin: top center;
+}
+
+.imagen-escritorio img:hover {
+  transform: rotate(5deg);
+}
+
+/* Efecto de hover en los conceptos */
+.content li .concepto {
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+.content li .concepto:hover {
+  color: var(--color-green);
+  transition: color 0.3s ease;
+}
+
+.content li .concepto::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--color-green);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.content li .concepto:hover::after {
+  transform: scaleX(1);
+}
+
+/* Estilos para módulos */
+.moduls {
+  box-shadow: 1px 0px 50px rgba(3, 250, 19, 0.89);
+  margin: auto;
+  position: relative;
+  z-index: 999;
+  width: 95%;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #00000070;
+}
+
+.moduls h2 {
+  font-size: var(--font-size-h2-xlarge);
+  color: var(--color-white);
+  display: inline-block;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.89);
+  margin-left: 80px;
+  position: relative;
+}
+
+.moduls h2:hover {
+  color: var(--color-green);
+  transition: color 0.3s ease;
+}
+
+.moduls h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: var(--color-green);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  z-index: -1;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.moduls h2:hover::after {
+  transform: scaleX(1);
+}
+
+.moduls li {
+  font-size: var(--font-size-h3-medium);
+  text-align: justify;
+  color: #fffdfd;
+  font-weight: lighter;
+  padding-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  width: 85%;
+}
+
+.moduls p {
+  font-size: var(--font-size-h2-small);
+  font-style: italic;
+  color: white;
+  text-align: center;
+  padding: 3% 7%;
+}
+
+.moduls a {
+  color: var(--color-green);
+}
+
+.moduls ul {
+  padding-left: 80px;
+}
+
+/* Botón deslizante */
+#slideButton {
+  display: block;
+  margin: 5vh auto;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+  background-color: #201e1e1f;
+  border: 1px solid #0eee15;
+  border-radius: 30px;
+  cursor: pointer;
+  color: white;
+  transition: background-color 0.8s ease-in-out, border-color 0.3s;
+  animation: pulse 4s infinite;
+  box-shadow: 0px 4px 15px rgba(3, 250, 19, 0.89);
+}
+
+#slideButton:hover {
+  background-color: rgba(14, 238, 21, 0.2);
+  border-color: #0eee15;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  
+  .test-container {
+    margin-top: 30%;
+  }
+
+  .test-container h2 {
+    font-size: var(--font-size-h2-mobile);
+    position: relative;
+    z-index: 999;
+  }
+
+  .moduls ul {
+    padding-left: 30px;
+  }
+
+  .moduls li {
+    font-size: var(--font-size-h3-mobile);
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .moduls h2 {
+    font-size: var(--font-size-h2-mobile);
+    text-align: center;
+    border-bottom: none;
+    margin-left: 0;
+    position: unset;
+    color: var(--color-green);
+  }
+
+  .moduls p {
+    font-size: var(--font-size-h3-mobile);
+    padding-bottom: 30px;
+  }
+
+  /* Adaptación de contenido */
+  .content {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 999;
+    padding-left: 0;
+  }
+
+  .content ul {
+    order: 1;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .content li {
+    padding: 10px;
+    font-size: var(--font-size-h3-mobile);
+  }
+
+  .content li .concepto::after {
+    background: none; /* O puedes usar background: transparent; */
+  }
+  .content li .concepto {
+    position: static; /* Elimina la posición relativa en modo responsive */
+  }
+
+  .content p {
+    font-size: 15px;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+    color: white;
+    background-color: #020202b4;
+    text-align: center;
+    color: var(--color-green);
+    font-weight: bold;
+    padding: 10px;
+  }
+
+  #scrollToTopBtn {
+    font-size: 35px;
+    line-height: 0.4;
+  }
+}
+
+/* Imagen para escritorio */
+.imagen-escritorio {
+  display: block;
+}
+
+/* Imagen para móviles */
+.imagen-movil {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .imagen-escritorio {
+    display: none;
+  }
+
+  .imagen-movil {
+    display: block;
+    text-align: center;
+    position: relative;
+    /* box-shadow: 0 8px 20px rgba(3, 250, 19, 0.89); */
+    z-index: 999;
+  }
+
+  .imagen-movil img {
+    max-width: 60%;
+    height: auto;
+    /* box-shadow: 0 8px 20px rgba(3, 250, 19, 0.89); */
+  }
+  .form-container {
+    margin-top: 18%;
+  }
+}

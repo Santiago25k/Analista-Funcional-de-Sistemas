@@ -1,0 +1,1 @@
+document.getElementById("hamburger").addEventListener("click",function(){let e=document.getElementById("nav-links");e.classList.toggle("active")});

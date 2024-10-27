@@ -37,7 +37,7 @@
   text-decoration: none;
   color: white;
   padding: 1vh 2vh;
-  font-size: 3.5vh;
+  font-size: 3vh;
 }
 
 .nav-links a:hover {
@@ -75,7 +75,7 @@
     
     left: 0;
     right: 0;
-    background-color: #000000b1; /* Color de fondo */
+    background-color: #000000dc; /* Color de fondo */
     
   }
 
@@ -83,7 +83,7 @@
     text-decoration: none;
     color: white;
     padding: 2vh 0;
-    font-size: 4vh; /* Ajustar el tamaño de los enlaces */
+    font-size: 3vh; /* Ajustar el tamaño de los enlaces */
     text-align: center; /* Centrar el texto dentro de los enlaces */
   }
 
