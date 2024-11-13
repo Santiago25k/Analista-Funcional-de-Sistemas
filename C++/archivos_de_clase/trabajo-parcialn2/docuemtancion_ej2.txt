@@ -1,0 +1,119 @@
+Documentación del Programa de Gestión de Estudiantes y Notas
+Descripción General
+Este programa permite gestionar la información de estudiantes, registrar las notas de los parciales (incluyendo recuperatorios), y mostrar el estado de cursada de los estudiantes (aprobado o desaprobado) basado en sus notas. El sistema está diseñado para manejar hasta 50 estudiantes y validar las notas de los parciales dentro de un rango de 1 a 10.
+
+Características Principales
+Ingreso de estudiantes: Permite ingresar el nombre y apellido de cada estudiante.
+Ingreso de notas: Registra las notas de dos parciales, incluyendo las notas de recuperación para aquellos estudiantes que no aprobaron el parcial correspondiente.
+
+Cálculo de la nota final: La nota final de cada estudiante se calcula como el promedio de las mejores notas de los dos parciales (considerando recuperatorio si es necesario).
+
+Aprobación: La nota final debe ser mayor o igual a 4 para que el estudiante apruebe.
+Interfaz interactiva: Utiliza un menú con opciones para navegar entre las diferentes funcionalidades.
+Funciones del Programa
+
+1. Ingresar Estudiantes (ingresarEstudiantes)
+Esta función permite ingresar la cantidad de estudiantes y sus nombres y apellidos. La cantidad de estudiantes debe ser un valor entre 1 y 50, de lo contrario, el programa solicita nuevamente un valor válido.
+
+Parámetros de entrada: Ninguno.
+Proceso:
+Solicita al usuario la cantidad de estudiantes.
+Valida que el número de estudiantes sea mayor a 0 y menor o igual a 50.
+Solicita el nombre y apellido de cada estudiante y los almacena en los arreglos correspondientes.
+2. Mostrar Estudiantes (mostrarEstudiantes)
+Muestra la lista de todos los estudiantes ingresados, mostrando su nombre y apellido.
+
+Parámetros de entrada: Ninguno.
+Proceso:
+Imprime el nombre y apellido de cada estudiante registrado en los arreglos nombres y apellidos.
+3. Ingresar Nota Primer Parcial (ingresarNotaPrimerParcial)
+Permite ingresar la nota del primer parcial para cada estudiante. La nota debe estar entre 1 y 10.
+
+Parámetros de entrada: Ninguno.
+Proceso:
+Solicita al usuario la nota del primer parcial de cada estudiante.
+Valida que la nota esté en el rango de 1 a 10. Si la nota es incorrecta, solicita que se ingrese nuevamente.
+4. Ingresar Recuperatorio del Primer Parcial (ingresarRecuperatorioPrimerParcial)
+Si un estudiante desaprobó el primer parcial (nota menor a 4), esta función permite ingresar la nota del recuperatorio del primer parcial.
+
+Parámetros de entrada: Ninguno.
+Proceso:
+Solo se solicita la nota del recuperatorio a aquellos estudiantes cuya nota en el primer parcial es menor a 4.
+Valida que la nota esté en el rango de 1 a 10.
+5. Ingresar Nota Segundo Parcial (ingresarNotaSegundoParcial)
+Permite ingresar la nota del segundo parcial para cada estudiante. Al igual que el primer parcial, la nota debe estar entre 1 y 10.
+
+Parámetros de entrada: Ninguno.
+Proceso:
+-Solicita la nota del segundo parcial para cada estudiante.
+Valida que la nota esté en el rango de 1 a 10.
+6. Ingresar Recuperatorio del Segundo Parcial (ingresarRecuperatorioSegundoParcial)
+-Si un estudiante desaprobó el segundo parcial (nota menor a 4), esta función permite ingresar la nota del recuperatorio del segundo parcial.
+
+Parámetros de entrada: Ninguno.
+Proceso:
+-Solo se solicita la nota del recuperatorio a aquellos estudiantes cuya nota en el segundo parcial es menor a 4.
+Valida que la nota esté en el rango de 1 a 10.
+7. Mostrar Estado de Cursada (mostrarEstadoCursada)
+
+-Esta función calcula y muestra el estado de cada estudiante, es decir, si aprobó o desaprobó el curso. La nota final se calcula como el promedio de las mejores notas de cada parcial (tomando la mejor nota entre el parcial y su recuperatorio).
+
+Parámetros de entrada: Ninguno.
+
+Proceso:
+-Para cada estudiante, se obtiene la mejor nota entre el primer parcial y su recuperatorio, así como la mejor nota entre el segundo parcial y su recuperatorio.
+
+-Se calcula la nota final como el promedio de ambas mejores notas.
+
+-Si la nota final es mayor o igual a 4, el estudiante se considera aprobado, de lo contrario, desaprobado.
+
+*- Menú Principal (main)-*
+
+-El menú principal del programa permite al usuario seleccionar entre diferentes opciones, como ingresar estudiantes, mostrar la lista de estudiantes, ingresar las notas de los parciales, mostrar el estado de cursada, o salir del programa.
+
+Parámetros de entrada: Ninguno.
+
+Proceso:
+-Muestra un menú interactivo con opciones numeradas.
+
+-Ejecuta las funciones correspondientes según la opción seleccionada por el usuario.
+
+*Flujo del Programa*
+
+-Ingreso de Estudiantes: El programa solicita la cantidad de estudiantes y sus nombres y apellidos.
+
+-Ingreso de Notas: Después de ingresar a los estudiantes, el programa solicita las notas de los parciales (incluyendo los recuperatorios en caso de ser necesario).
+
+-Mostrar Estado de Cursada: Al finalizar el ingreso de notas, el programa muestra el estado de cada estudiante (Aprobado o Desaprobado) basado en su nota final.
+
+*Estructura de Datos
+
+Arreglos de Estudiantes:
+
+-nombres[]: Almacena los nombres de los estudiantes.
+
+-apellidos[]: Almacena los apellidos de los estudiantes.
+
+-notasPrimerParcial[]: Almacena las notas del primer parcial de cada estudiante.
+
+-notasRecuperatorioPrimerParcial[]: Almacena las notas de los recuperatorios del primer parcial, si es necesario.
+
+-notasSegundoParcial[]: Almacena las notas del segundo parcial de cada estudiante.
+
+-notasRecuperatorioSegundoParcial[]: Almacena las notas de los recuperatorios del segundo parcial, si es necesario.
+
+*Restricciones y Validaciones
+
+-El número de estudiantes debe ser entre 1 y 50.
+
+-Las notas deben estar en el rango de 1 a 10.
+
+-La nota mínima para aprobar es 4.
+
+-Las notas de los recuperatorios solo se solicitan si el estudiante desaprobó el parcial correspondiente.
+
+
+Conclusión
+
+Este programa proporciona una solución sencilla y eficiente para gestionar la información de estudiantes, sus notas y calcular si aprobaron o no el curso basado en una evaluación de sus parciales. Está diseñado para ser fácil de usar y permitir la interacción con un número limitado de estudiantes.
+

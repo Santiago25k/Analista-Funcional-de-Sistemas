@@ -1,0 +1,78 @@
+Documentación Descriptiva del Programa: Control de Ventas de Cerveza Artesanal
+Este programa en C++ permite gestionar el inventario y ventas de una tienda de cervezas artesanales, enfocándose en dos canales de venta: online y local. La estructura del programa está organizada en una serie de funciones que realizan tareas específicas, haciendo que sea modular y fácil de entender. A continuación, se describe cada una de las partes del código y su funcionalidad.
+
+Librerías y Espacio de Nombres
+El programa utiliza la librería estándar de C++ iostream, que proporciona funciones para operaciones de entrada y salida. Además, emplea el espacio de nombres std para simplificar el uso de estas funciones, evitando la necesidad de prefijos adicionales en las llamadas a las funciones.
+
+Variables Globales
+El programa define varias variables globales:
+
+Stock de Inventario: Representa la cantidad total de cervezas disponibles para vender.
+
+Arreglos para Ventas: Hay dos arreglos, uno para las ventas online y otro para las ventas 
+
+locales. Estos arreglos almacenan la cantidad de unidades vendidas en cada transacción.
+
+Contadores de Ventas y Totales: Se mantienen contadores separados para cada tipo de venta, así como acumuladores que suman la cantidad total de unidades vendidas en cada canal.
+
+Estas variables globales permiten que las distintas funciones puedan acceder y modificar el estado de inventario y el registro de ventas sin la necesidad de pasar estos datos entre funciones.
+
+*-Función mostrarMenu-*
+La función mostrarMenu es la encargada de desplegar el menú principal en la consola, con seis opciones que representan las acciones posibles del programa:
+
+Ingresar una nueva venta.
+Listar las ventas realizadas online.
+Listar las ventas realizadas localmente.
+Mostrar las ventas online que superan el promedio.
+Mostrar las ventas locales que superan el promedio.
+Salir del programa.
+Cada opción del menú tiene un número correspondiente, que el usuario debe ingresar para seleccionar la acción deseada.
+
+*-Función ingresarVenta-*
+La función ingresarVenta permite registrar una nueva venta. Aquí, el usuario selecciona primero el tipo de venta (online o local), y luego ingresa la cantidad de unidades vendidas.
+
+Validaciones: La función realiza dos tipos de validación importantes:
+Primero, verifica que el tipo de venta ingresado sea válido (debe ser 1 para online o 2 para local).
+Segundo, comprueba que la cantidad de unidades ingresadas sea mayor que cero y no exceda el stock disponible.
+
+Si la venta cumple con estos requisitos, la función registra la cantidad vendida en el arreglo correspondiente, incrementa los contadores y actualiza el stock, reduciendo la cantidad vendida.
+
+*-Funciones listarVentasOnline y listarVentasLocal-*
+Estas dos funciones muestran la lista de ventas realizadas en cada canal:
+
+-listarVentasOnline: Muestra las ventas registradas online en el orden en que se ingresaron.
+
+-listarVentasLocal: Muestra las ventas registradas localmente.
+Ambas funciones recorren los arreglos correspondientes (ventas online y ventas local) y muestran cada venta con su cantidad de unidades vendidas. 
+
+Estas funciones son útiles para revisar el historial de ventas en cada canal.
+
+*-Funciones ventasOnlinePrioritarias y ventasLocalPrioritarias-*
+Estas funciones muestran solo aquellas ventas que superan el promedio de ventas en su respectivo canal. Su funcionamiento implica varios pasos:
+
+Cálculo del Promedio: Primero, la función calcula el promedio de ventas, dividiendo el total de unidades vendidas en ese canal por la cantidad de ventas.
+
+Filtrado de Ventas Prioritarias: Luego, recorre el arreglo de ventas y muestra solo aquellas ventas que superan el promedio calculado.
+
+Esta funcionalidad permite identificar las ventas más significativas o destacadas en cada canal, lo cual puede ser útil para análisis de rendimiento.
+
+*-Función Principal (main)-*
+La función main controla el flujo del programa. Contiene un bucle while que permite que el usuario seleccione opciones del menú de forma continua hasta que decida salir.
+
+-Despliegue del Menú: Llama a la función mostrarMenu para presentar las opciones en la consola.
+
+-Selección de Opción: Luego, lee la opción ingresada por el usuario y llama a la función correspondiente según la opción seleccionada.
+
+-Validación de Opción: Si el usuario ingresa una opción no válida, el programa muestra un mensaje de error y permite intentar nuevamente.
+El programa finaliza solo cuando el usuario selecciona la opción para salir.
+
+Ejemplo de Uso del Programa
+Para ilustrar el uso del programa, aquí tienes un ejemplo de flujo de ejecución:
+
+-Registro de una Venta: El usuario selecciona la opción para ingresar una venta, elige el canal (online o local), y la cantidad de unidades. La venta se registra y el stock se actualiza.
+
+-Listado de Ventas: Luego, el usuario puede ver las ventas registradas en cada canal eligiendo las opciones correspondientes.
+
+-Ventas Prioritarias: Al seleccionar la opción de ventas prioritarias, el programa muestra aquellas ventas que superan el promedio de unidades vendidas en el canal especificado.
+
+-Salir del Programa: Finalmente, al elegir la opción de salir, el programa termina su ejecución.

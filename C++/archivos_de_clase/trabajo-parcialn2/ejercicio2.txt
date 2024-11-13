@@ -1,0 +1,15 @@
+Responsabilidades de Cada Integrante
+Integrante 1: Ingreso de Estudiantes
+El primer integrante será responsable de implementar la función ingresarEstudiantes. Debe registrar los nombres y apellidos de hasta 50 estudiantes, asegurándose de que la entrada sea válida. Este integrante deberá también gestionar el conteo de la cantidad de estudiantes ingresados.
+
+Integrante 2: Mostrar Estudiantes
+El segundo integrante se encargará de desarrollar la función mostrarEstudiantes. Su tarea consistirá en listar todos los estudiantes registrados. Este integrante debe asegurarse de que los nombres y apellidos se presenten de manera clara y organizada, facilitando la revisión por parte del usuario.
+
+Integrante 3: Ingreso de Notas del Primer Parcial
+El tercer integrante implementará las funciones relacionadas con la gestión de notas del primer parcial. Esto incluye ingresarNotaPrimerParcial, donde se solicitará la nota de cada estudiante, y ingresarRecuperatorioPrimerParcial, que permitirá ingresar la nota solo a quienes desaprobaron. Este integrante debe validar las notas ingresadas, asegurándose de que estén dentro del rango permitido.
+
+Integrante 4: Ingreso de Notas del Segundo Parcial
+El cuarto integrante se encargará de las funciones relacionadas con el segundo parcial. Debe implementar ingresarNotaSegundoParcial, donde se solicitará la nota de cada estudiante, y ingresarRecuperatorioSegundoParcial, que permitirá el ingreso de notas solo a quienes desaprobaron. Al igual que el integrante 3, deberá validar las notas ingresadas.
+
+Integrante 5: Mostrar Estado de Cursada
+El quinto integrante desarrollará la función mostrarEstadoCursada. Su responsabilidad será calcular y mostrar la nota de cada instancia de evaluación (parcial o recuperatorio) y la nota final de cada estudiante. Este integrante debe asegurarse de que se utilicen las mejores notas de cada instancia para calcular la nota final, presentando los resultados de manera clara y comprensible.

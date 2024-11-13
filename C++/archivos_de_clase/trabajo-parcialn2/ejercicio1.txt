@@ -1,0 +1,12 @@
+Responsabilidades de Cada Integrante
+Integrante 1: Menú Principal y Navegación
+El primer integrante será responsable de desarrollar la función principal del programa, que incluirá la creación del menú principal. Debe asegurarse de que las opciones sean claras y fáciles de seleccionar. Además, este integrante debe implementar la lógica para llamar a las funciones secundarias según la opción elegida por el usuario. También es crucial que implemente una opción para permitir la salida del programa, asegurando una experiencia de usuario fluida.
+
+Integrante 2: Ingreso de Ventas
+El segundo integrante se encargará de la implementación de la función ingresarVenta. Este integrante debe mostrar el stock disponible al usuario y solicitar el tipo y cantidad de venta, ya sea online o local. Es esencial validar la cantidad ingresada, asegurándose de que no supere el stock disponible. Además, este integrante será responsable de actualizar el stock y los arreglos correspondientes a las ventas.
+
+Integrante 3: Listado de Ventas
+El tercer integrante desarrollará las funciones listarVentasOnline y listarVentasLocal. Su tarea consistirá en mostrar todas las ventas realizadas, organizadas por la fecha de ingreso. Este integrante debe asegurarse de que los datos se presenten de manera clara y ordenada, permitiendo al usuario revisar fácilmente las ventas registradas.
+
+Integrantes 4 y 5: Ventas Prioritarias y Función de Salida
+Los integrantes 4 y 5 trabajarán juntos en la implementación de las funciones ventasOnlinePrioritarias y ventasLocalPrioritarias. Su responsabilidad incluirá el cálculo del promedio de ventas en cada modalidad y la filtración de ventas que superen dicho promedio, mostrando solo las ventas prioritarias. Además, deben implementar la función de salida, permitiendo que el programa finalice cuando el usuario elija la opción correspondiente, incluyendo una confirmación antes de salir.
